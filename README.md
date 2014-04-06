@@ -1,4 +1,4 @@
-robotic-arm
+Robotic Arm
 ===========
 
 2014 Robotic Arm Hardware/Software
