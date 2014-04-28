@@ -39,15 +39,16 @@ digitalWrite(8, LOW); //Set up DCM operation
 digitalWrite(10, HIGH); //DCM mode in manual PWM operation
 digitalWrite(11, LOW); //Short blanking
 digitalWrite(A0, HIGH);//Going forward
-digitalWrite(A1, LOW);//Initially the motor is on
+digitalWrite(A1, LOW);//Initially the motor is off
 //Serial.println("Starting...");
  
 }
  
 void loop(){// Main loop executing non-time sensitive code
   if(Serial.available()>0){
-    incomingbyte = Serial.read();
-    if(incomingbyte == 'w')
+    incomingbyte = Serial.
+    read();
+    if(incomingbyte == 'q')
     {
       digitalWrite(A1, HIGH);
       digitalWrite(A0,HIGH);
@@ -56,7 +57,7 @@ void loop(){// Main loop executing non-time sensitive code
       digitalWrite(9,LOW);
       digitalWrite(A1, LOW);
     }
-    else if(incomingbyte == 's')
+    else if(incomingbyte == 'a')
     {
       digitalWrite(A1, HIGH);
       digitalWrite(A0,LOW);
