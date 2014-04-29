@@ -46,8 +46,7 @@ digitalWrite(A1, LOW);//Initially the motor is off
  
 void loop(){// Main loop executing non-time sensitive code
   if(Serial.available()>0){
-    incomingbyte = Serial.
-    read();
+    incomingbyte = Serial.read();
     if(incomingbyte == 'q')
     {
       digitalWrite(A1, HIGH);
