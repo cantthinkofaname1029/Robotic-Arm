@@ -33,8 +33,8 @@ void loop()
 {
   if(Serial.available()>0)
   {
-    byte received = Serial.read();
-    Serial.print(received);
+    byte received = Serial.read();//FIXME different if using struct serializer
+    printLog(received);
     switch(received)
     {
       //left belt
@@ -86,7 +86,7 @@ void loop()
         break;
         
       default:
-        Serial.println("Invalid");
+        printLog("Invalid");
     }
   }
 }
@@ -101,4 +101,10 @@ void printLog(String s)
   {
     //TODO: Struct serializer log
   }
+}
+
+void printLog(char c)
+{
+  String s(c);
+  printLog(s);
 }

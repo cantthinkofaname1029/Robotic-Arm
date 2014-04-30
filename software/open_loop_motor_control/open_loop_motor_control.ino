@@ -40,13 +40,14 @@ digitalWrite(10, HIGH); //DCM mode in manual PWM operation
 digitalWrite(11, LOW); //Short blanking
 digitalWrite(A0, HIGH);//Going forward
 digitalWrite(A1, LOW);//Initially the motor is off
-//Serial.println("Starting...");
+Serial.println("Starting...");
  
 }
  
 void loop(){// Main loop executing non-time sensitive code
   if(Serial.available()>0){
     incomingbyte = Serial.read();
+    Serial.println(incomingbyte);
     if(incomingbyte == 'q')
     {
       digitalWrite(A1, HIGH);
