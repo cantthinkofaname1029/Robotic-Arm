@@ -1,6 +1,18 @@
 #include <SoftwareSerial.h>
+#include "EasyTransfer.h"
+
 #define FORWARD_CHARACTER 'q'
 #define REVERSE_CHARACTER 'a'
+
+#define MAX_LOG_LENGTH 100 //Maximum number of characters in a log print
+//when sending data to the motherboard. Limited due to limitations of 
+//EasyTransfer library. Extra space will be padding with crap (null-terminated strings)
+
+EasyTransfer ET;
+
+struct SEND_DATA_STRUCTURE{
+  char log_data[MAX_LOG_LENGTH];
+};
 
 SoftwareSerial serial1(3,2);//rx,tx
 SoftwareSerial serial2(5,4);
