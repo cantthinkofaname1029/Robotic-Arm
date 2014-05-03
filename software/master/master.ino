@@ -1,4 +1,5 @@
-#include "SoftwareSerial.h"
+#include <SoftwareSerial.h>
+#include "libraries/DynamixelSoftSerial.h"
 #include "EasyTransfer.h"
 
 #define FORWARD_CHARACTER 'q'
