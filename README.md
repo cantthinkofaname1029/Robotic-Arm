@@ -16,3 +16,5 @@ Software:
 ---------
 
 I've only included open loop control software at this point. The UART lines of each motor controller are currently connected in a single "bus" based topology. Each motor controller moves based on different byte values, thus allowing them to operate on the same bus without addressing or bus contention. A more roboust protocol will eventually be implemented.
+
+Replace the SoftwareSerial libraries in the arduino/libraries folder for the IDE with the included to ensure the Dynamexial servo works.
