@@ -8,12 +8,37 @@
 //when sending data to the motherboard. Limited due to limitations of 
 //EasyTransfer library. Extra space will be padding with crap (null-terminated strings)
 
-EasyTransfer ET;
+
+//----------------------------------------------
+//Easy Transfer stuff
+EasyTransfer ETsend;
+EasyTransfer ETreceive;
 
 struct SEND_DATA_STRUCTURE{
   char log_data[MAX_LOG_LENGTH];
 };
 
+struct RECEIVE_DATA_STRUCUTRE{
+  boolean joint1Forward;
+  boolean joint1Backward;
+  boolean joint2Forward;
+  boolean joint2Backward;
+  boolean joint3Forward;
+  boolean joint3Backward;
+  boolean joint4Forward;
+  boolean joint4Backward;
+  boolean joint5Forward;
+  boolean joint5Backward;
+  boolean joint6Forward;
+  boolean joint6Backward;
+};
+
+SEND_DATA_STRUCTURE sendData;
+RECEIVE_DATA_STRUCTURE receiveData;
+
+
+//----------------------------------------------------
+// motor controller serial declerations
 SoftwareSerial serial1(3,2);//rx,tx
 SoftwareSerial serial2(5,4);
 SoftwareSerial serial3(7,6);
@@ -29,6 +54,10 @@ void setup()
   pinMode(DEBUG_MODE_SELECT, INPUT);
   DEBUG_MODE = digitalRead(DEBUG_MODE_SELECT);
   Serial.begin(9600);
+  if(!DEBUG_MODE)
+  {
+    //initialize easy transfer object
+  }
   printLog("Robotic Arm Initializing");
   printLog(DEBUG_MODE ? "Robotic Arm in Debug Mode" : "Robotic Arm in Operating Mode");
   printLog("Hardware Serial Initialized");
