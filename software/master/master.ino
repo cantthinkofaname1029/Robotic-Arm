@@ -1,5 +1,5 @@
 #include <SoftwareSerial.h>
-#include "libraries/DynamixelSoftSerial.h"
+#include "DynamixelSoftSerial.h"
 #include "EasyTransfer.h"
 
 #define FORWARD_CHARACTER 'q'
@@ -88,8 +88,52 @@ void setup()
 
 void loop()
 {
-  if(Serial.available()>0)
+  if(!DEBUG_MODE && ETreceive.receiveData())
   {
+    // Not DEBUG MODE version
+    // Go through each part of the receive struct.
+    if(receiveData.joint1Forward)
+      serial1.write(FORWARD_CHARACTER);
+    if(receiveData.joint1Backward)
+      serial1.write(REVERSE_CHARACTER);
+    if(receiveData.joint2Forward)
+      serial2.write(FORWARD_CHARACTER);
+    if(receiveData.joint2Backward)
+      serial2.write(REVERSE_CHARACTER);
+    if(receiveData.joint3Forward)
+      serial3.write(FORWARD_CHARACTER);
+    if(receiveData.joint3Backward)
+      serial3.write(REVERSE_CHARACTER);
+    if(receiveData.joint4Forward)
+      serial4.write(FORWARD_CHARACTER);
+    if(receiveData.joint4Backward)
+      serial4.write(REVERSE_CHARACTER);
+    if(receiveData.joint5Forward)
+      serial5.write(FORWARD_CHARACTER);
+    if(receiveData.joint5Backward)
+      serial5.write(REVERSE_CHARACTER);
+    if(receiveData.joint6Forward)
+      serial6.write(FORWARD_CHARACTER);//FIXME: change to dynamixel servo function
+    if(receiveData.joint6Backward)
+      serial6.write(REVERSE_CHARACTER);//FIXME: same as above
+    
+    // Reset receive struct for next round
+    receiveData.joint1Forward = false;
+    receiveData.joint1Backward = false;
+    receiveData.joint2Forward = false;
+    receiveData.joint2Backward = false;
+    receiveData.joint3Forward = false;
+    receiveData.joint3Backward = false;
+    receiveData.joint4Forward = false;
+    receiveData.joint4Backward = false;
+    receiveData.joint5Forward = false;
+    receiveData.joint5Backward = false;
+    receiveData.joint6Forward = false;
+    receiveData.joint6Backward = false;
+  }
+  else if(DEBUG_MODE && Serial.available()>0)
+  {
+    //DEBUG MODE version
     byte received = Serial.read();//FIXME different if using struct serializer
     printLog(received);
     switch(received)
