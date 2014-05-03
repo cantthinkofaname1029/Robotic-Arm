@@ -1,4 +1,4 @@
-#include <SoftwareSerial.h>
+#include "SoftwareSerial.h"
 #include "EasyTransfer.h"
 
 #define FORWARD_CHARACTER 'q'
@@ -18,7 +18,7 @@ struct SEND_DATA_STRUCTURE{
   char log_data[MAX_LOG_LENGTH];
 };
 
-struct RECEIVE_DATA_STRUCUTRE{
+struct RECEIVE_DATA_STRUCTURE{
   boolean joint1Forward;
   boolean joint1Backward;
   boolean joint2Forward;
@@ -57,6 +57,21 @@ void setup()
   if(!DEBUG_MODE)
   {
     //initialize easy transfer object
+    receiveData.joint1Forward = false;
+    receiveData.joint1Backward = false;
+    receiveData.joint2Forward = false;
+    receiveData.joint2Backward = false;
+    receiveData.joint3Forward = false;
+    receiveData.joint3Backward = false;
+    receiveData.joint4Forward = false;
+    receiveData.joint4Backward = false;
+    receiveData.joint5Forward = false;
+    receiveData.joint5Backward = false;
+    receiveData.joint6Forward = false;
+    receiveData.joint6Backward = false;
+    sendData.log_data[0]='\0';
+    ETsend.begin(details(sendData), &Serial);
+    ETreceive.begin(details(receiveData), &Serial);
   }
   printLog("Robotic Arm Initializing");
   printLog(DEBUG_MODE ? "Robotic Arm in Debug Mode" : "Robotic Arm in Operating Mode");
