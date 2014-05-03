@@ -45,7 +45,7 @@ SoftwareSerial serial2(5,4);
 SoftwareSerial serial3(7,6);
 SoftwareSerial serial4(9,8);
 SoftwareSerial serial5(11,10);
-SoftwareSerial serial6(13,12);
+//SoftwareSerial serial6(13,12);//A0 is direction control
 
 boolean DEBUG_MODE = false;
 const int DEBUG_MODE_SELECT = A5;
@@ -74,6 +74,7 @@ void setup()
     ETsend.begin(details(sendData), &Serial);
     ETreceive.begin(details(receiveData), &Serial);
   }
+  
   printLog("Robotic Arm Initializing");
   printLog(DEBUG_MODE ? "Robotic Arm in Debug Mode" : "Robotic Arm in Operating Mode");
   printLog("Hardware Serial Initialized");
@@ -82,8 +83,14 @@ void setup()
   serial3.begin(9600);
   serial4.begin(9600);
   serial5.begin(9600);
-  serial6.begin(9600);
   printLog("Software Serial Initialized");
+  
+  // initialize dysnamixel servo
+  // baud, rx, tx, direction pin (half-duplex RS-485 transceiver)
+  Dynamixel.begin(57600,13,12,A0);
+  delay(1000);//give servo time to initialize
+  printLog("Dyanmixel Servo Initalized");
+  printLog("Hello, this is Robotic Arm. (Robotic Arm Ready)");
 }
 
 void loop()
@@ -113,9 +120,9 @@ void loop()
     if(receiveData.joint5Backward)
       serial5.write(REVERSE_CHARACTER);
     if(receiveData.joint6Forward)
-      serial6.write(FORWARD_CHARACTER);//FIXME: change to dynamixel servo function
+      turnRight();
     if(receiveData.joint6Backward)
-      serial6.write(REVERSE_CHARACTER);//FIXME: same as above
+      turnLeft();
     
     // Reset receive struct for next round
     receiveData.joint1Forward = false;
@@ -180,16 +187,34 @@ void loop()
         
       //base servo
       case 'y':
-        serial6.write(FORWARD_CHARACTER);
+        turnRight();
         break;
       case 'h':
-        serial6.write(REVERSE_CHARACTER);
+        turnLeft();
         break;
         
       default:
         printLog("Invalid");
     }
   }
+}
+
+// Dynamixel servo functions
+// FIXME: eliminate delays to make it a non-blocking call
+void turnRight()
+{
+  Dynamixel.setEndless(1,ON);
+  Dynamixel.turn(1,RIGTH,500);
+  delay(50);
+  Dynamixel.turn(1,RIGTH,0);
+}
+
+void turnLeft()
+{
+  Dynamixel.setEndless(1,ON);
+  Dynamixel.turn(1,RIGTH,500);
+  delay(50);
+  Dynamixel.turn(1,RIGTH,0);
 }
 
 void printLog(String s)
