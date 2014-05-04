@@ -205,16 +205,16 @@ void turnRight()
 {
   Dynamixel.setEndless(1,ON);
   Dynamixel.turn(1,RIGTH,500);
-  delay(50);
+  delay(100);
   Dynamixel.turn(1,RIGTH,0);
 }
 
 void turnLeft()
 {
   Dynamixel.setEndless(1,ON);
-  Dynamixel.turn(1,RIGTH,500);
-  delay(50);
-  Dynamixel.turn(1,RIGTH,0);
+  Dynamixel.turn(1,LEFT,500);
+  delay(100);
+  Dynamixel.turn(1,LEFT,0);
 }
 
 void printLog(String s)
