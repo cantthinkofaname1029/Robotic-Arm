@@ -20,7 +20,7 @@ struct SEND_DATA_STRUCTURE{
 };
 
 struct RECEIVE_DATA_STRUCTURE{
-  boolean joint1Forward;
+  uint_8t joint1Forward;
   boolean joint1Backward;
   boolean joint2Forward;
   boolean joint2Backward;
