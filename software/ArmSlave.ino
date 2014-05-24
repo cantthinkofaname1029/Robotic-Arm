@@ -1,28 +1,19 @@
 #include <Wire.h>
 
-int wireAddress=4;
+//Change if uploading to a different slave board
+int wireAddress=2;
 
-float voltage = 0;
-float current = 0;
 volatile int cposition = 0;
-int setpointposition = 0;
-int error = 0;
 volatile int pwm = 0;
-int integrator = 0;
 byte incomingbyte = 0;
 
-const int TIME_DELAY = 500;
- 
-//Motor tuning parameters
-const int ki = 1;
-const int kp = 4;
- 
+const int TIME_DELAY = 5000;
+
 void setup(){
-  Wire.begin(wireAddress);      // join i2c bus with address #4
-  Wire.onReceive(receiveEvent); // register event
+  Wire.begin(wireAddress);
+  Wire.onReceive(receiveEvent);
   Serial.begin(9600);   
   
-  // Setting up pins in proper mode
   pinMode(5, OUTPUT);
   pinMode(8, OUTPUT);
   pinMode(9, OUTPUT);
@@ -44,14 +35,12 @@ void setup(){
 }
  
 void loop(){// Main loop executing non-time sensitive code
-  delay(100);
+  //delay(100);
 }
 
-void receiveEvent(int howMany)
-{
+void receiveEvent(int howMany){
   int incomingbyte = Wire.read();    // receive byte as an integer
-  if(incomingbyte == 0)
-  {
+  if(incomingbyte == 0){
     Serial.println("0");
     digitalWrite(A1, HIGH);
     digitalWrite(A0,HIGH);
@@ -60,8 +49,7 @@ void receiveEvent(int howMany)
     digitalWrite(9,LOW);
     digitalWrite(A1, LOW);
   }
-  else if(incomingbyte == 1)
-  {
+  else if(incomingbyte == 1){
     Serial.println("1");
     digitalWrite(A1, HIGH);
     digitalWrite(A0,LOW);
