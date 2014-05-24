@@ -18,6 +18,7 @@ struct SEND_DATA_STRUCTURE{
 };
 
 struct RECEIVE_DATA_STRUCTURE{
+  uint8_t reset;
   uint8_t wristUp;
   uint8_t wristDown;
   uint8_t wristClockWise;
@@ -39,6 +40,9 @@ boolean DEBUG_MODE = false;
 const int DEBUG_MODE_SELECT=A3;
 
 void setup(){
+  // Setup reset pin
+  pinMode(4, OUTPUT);
+  
   attachInterrupt(0, backup, RISING);
   if(analogRead(DEBUG_MODE_SELECT)<=10){
     DEBUG_MODE = true;
@@ -63,6 +67,8 @@ void setup(){
 void loop(){
   if(!DEBUG_MODE && ETreceive.receiveData() && count<=50){ 
     count++;
+    if(receiveData.reset)
+      reset();
     if(receiveData.wristUp)
       wristUp();
     if(receiveData.wristDown)
@@ -90,6 +96,7 @@ void loop(){
     resetStruct();
   }
   else if(DEBUG_MODE && Serial.available()>0 && count<=50){
+    Serial.println("Serial mode");
     byte received = Serial.read();
     printLog(received);
     count++;
@@ -152,6 +159,12 @@ void printLog(String s){
 void printLog(char c){
   String s(c);
   printLog(s);
+}
+
+void reset(){
+  digitalWrite(4, LOW);
+  delay(2000);
+  pinMode(4, INPUT);
 }
 
 void wristClockWise(){
