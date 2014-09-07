@@ -20255,6 +20255,41 @@ SMT header is CONN-09042.</description>
 <label x="177.8" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="PWM9" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="EN_B"/>
+<wire x1="43.18" y1="17.78" x2="45.72" y2="17.78" width="0.1524" layer="91"/>
+<label x="45.72" y="17.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM8" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="EN_A"/>
+<wire x1="43.18" y1="40.64" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
+<label x="45.72" y="40.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM6" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="EN_A"/>
+<wire x1="106.68" y1="40.64" x2="109.22" y2="40.64" width="0.1524" layer="91"/>
+<label x="109.22" y="40.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM5" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="EN_B"/>
+<wire x1="106.68" y1="17.78" x2="109.22" y2="17.78" width="0.1524" layer="91"/>
+<label x="109.22" y="17.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM7" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="EN_A"/>
+<wire x1="175.26" y1="40.64" x2="177.8" y2="40.64" width="0.1524" layer="91"/>
+<label x="177.8" y="40.64" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
