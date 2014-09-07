@@ -9,6 +9,7 @@
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -21,6 +22,7 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -1689,7 +1691,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C37" pad="2"/>
 <contactref element="U1" pad="GND1"/>
 <contactref element="U4" pad="GND1"/>
-<contactref element="U$1" pad="10"/>
 <contactref element="IC1" pad="3"/>
 <contactref element="IC1" pad="10"/>
 <contactref element="C1" pad="1"/>
@@ -1711,6 +1712,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U2" pad="5"/>
 <wire x1="98.5266" y1="74.295" x2="93.98" y2="74.295" width="0.4064" layer="1"/>
 <via x="93.98" y="74.295" extent="1-16" drill="0.6" shape="octagon"/>
+<contactref element="U$1" pad="10"/>
 <wire x1="116.45" y1="73.37" x2="124.85" y2="73.37" width="0" layer="19" extent="1-1"/>
 <wire x1="98.5266" y1="74.295" x2="116.45" y2="73.37" width="0" layer="19" extent="1-1"/>
 <wire x1="20.105" y1="5.08" x2="18.415" y2="8.1" width="0" layer="19" extent="1-1"/>
@@ -1889,6 +1891,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R15" pad="1"/>
 <contactref element="T2" pad="2"/>
 <contactref element="U2" pad="8"/>
+<contactref element="U$1" pad="1"/>
+<wire x1="107" y1="28.37" x2="98.5266" y2="70.485" width="0" layer="19" extent="1-1"/>
 <wire x1="13.0429" y1="71.5772" x2="98.5266" y2="70.485" width="0" layer="19" extent="1-1"/>
 <wire x1="12.1539" y1="72.898" x2="13.0429" y2="71.5772" width="0" layer="19" extent="1-1"/>
 <wire x1="9.5747" y1="67.3836" x2="13.0429" y2="71.5772" width="0" layer="19" extent="1-1"/>
@@ -1900,7 +1904,8 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$3">
 <contactref element="ON" pad="A"/>
 <contactref element="RN3" pad="4"/>
-<wire x1="3.971" y1="30.226" x2="5.5988" y2="31.9597" width="0" layer="19" extent="1-1"/>
+<wire x1="5.5988" y1="31.9597" x2="5.5988" y2="31.8538" width="0.4064" layer="1"/>
+<wire x1="5.5988" y1="31.8538" x2="3.971" y2="30.226" width="0.4064" layer="1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="IC4" pad="6"/>
@@ -1942,12 +1947,14 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$54">
 <contactref element="RX" pad="A"/>
 <contactref element="RN3" pad="1"/>
-<wire x1="5.5988" y1="34.3597" x2="3.971" y2="35.8648" width="0" layer="19" extent="1-1"/>
+<wire x1="3.971" y1="35.8648" x2="4.0937" y2="35.8648" width="0.4064" layer="1"/>
+<wire x1="4.0937" y1="35.8648" x2="5.5988" y2="34.3597" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$55">
 <contactref element="TX" pad="A"/>
 <contactref element="RN3" pad="2"/>
-<wire x1="3.971" y1="33.9852" x2="5.5988" y2="33.5597" width="0" layer="19" extent="1-1"/>
+<wire x1="5.5988" y1="33.5597" x2="4.3965" y2="33.5597" width="0.4064" layer="1"/>
+<wire x1="4.3965" y1="33.5597" x2="3.971" y2="33.9852" width="0.4064" layer="1"/>
 </signal>
 <signal name="USBVCC">
 <contactref element="F1" pad="1"/>
@@ -1965,7 +1972,8 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$2">
 <contactref element="L" pad="A"/>
 <contactref element="RN3" pad="3"/>
-<wire x1="3.971" y1="32.1056" x2="5.5988" y2="32.7597" width="0" layer="19" extent="1-1"/>
+<wire x1="5.5988" y1="32.7597" x2="4.6251" y2="32.7597" width="0.4064" layer="1"/>
+<wire x1="4.6251" y1="32.7597" x2="3.971" y2="32.1056" width="0.4064" layer="1"/>
 </signal>
 <signal name="GATE_CMD">
 <contactref element="T1" pad="3"/>
@@ -2216,6 +2224,8 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="TXD2">
 <contactref element="U3" pad="4"/>
+<contactref element="U$1" pad="3"/>
+<wire x1="52.71" y1="30.85" x2="111" y2="28.37" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDA1">
 <contactref element="U3" pad="9"/>
@@ -2397,6 +2407,8 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="RXD2">
 <contactref element="U3" pad="3"/>
+<contactref element="U$1" pad="2"/>
+<wire x1="52.71" y1="30.35" x2="109" y2="28.37" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AD14(RXD3)">
 <contactref element="U3" pad="92"/>
@@ -2563,9 +2575,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="8.1915" y1="61.7728" x2="9.5747" y2="66.8836" width="0" layer="19" extent="1-1"/>
 <wire x1="5.1504" y1="57.9628" x2="8.1915" y2="61.7728" width="0" layer="19" extent="1-1"/>
 <wire x1="2.5146" y1="51.2064" x2="5.1504" y2="57.9628" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="VDD">
-<contactref element="U$1" pad="1"/>
 </signal>
 <signal name="OCD_B_1">
 <contactref element="IC1" pad="9"/>

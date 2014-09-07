@@ -20981,6 +20981,7 @@ Source: MAX3465-MAX3469.pdf</description>
 <part name="GND53" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND54" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R24" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="220"/>
+<part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23921,10 +23922,39 @@ Source: MAX3465-MAX3469.pdf</description>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="43.18" y="35.56"/>
+<instance part="GND16" gate="1" x="17.78" y="22.86" rot="R270"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="+5V" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="VDD"/>
+<wire x1="22.86" y1="45.72" x2="20.32" y2="45.72" width="0.1524" layer="91"/>
+<label x="17.78" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TXD2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="DIN"/>
+<wire x1="22.86" y1="40.64" x2="20.32" y2="40.64" width="0.1524" layer="91"/>
+<label x="15.24" y="40.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="22.86" y1="22.86" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+</segment>
+</net>
+<net name="RXD2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="DOUT"/>
+<wire x1="22.86" y1="43.18" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
+<label x="15.24" y="43.18" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
