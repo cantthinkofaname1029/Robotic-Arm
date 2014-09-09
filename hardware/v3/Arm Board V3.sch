@@ -3902,6 +3902,8 @@ Using all header pins to connect to XL booster packs.</description>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="H5" library="Lib_TH" deviceset="H_MNTHOLE" device="_#4"/>
+<part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3924,6 +3926,8 @@ Using all header pins to connect to XL booster packs.</description>
 <instance part="GND12" gate="1" x="35.56" y="30.48"/>
 <instance part="GND13" gate="1" x="45.72" y="30.48"/>
 <instance part="GND14" gate="1" x="55.88" y="30.48"/>
+<instance part="H5" gate="G$1" x="66.04" y="38.1"/>
+<instance part="GND15" gate="1" x="66.04" y="30.48"/>
 </instances>
 <busses>
 </busses>
@@ -3953,6 +3957,11 @@ Using all header pins to connect to XL booster packs.</description>
 <pinref part="H4" gate="G$1" pin="1"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="55.88" y1="33.02" x2="55.88" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="H5" gate="G$1" pin="1"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="66.04" y1="33.02" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A1_1" class="0">
@@ -4895,6 +4904,41 @@ Using all header pins to connect to XL booster packs.</description>
 <pinref part="U$1" gate="G$1" pin="PF4"/>
 <wire x1="43.18" y1="20.32" x2="53.34" y2="20.32" width="0.1524" layer="91"/>
 <label x="45.72" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EN_A_1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA7"/>
+<wire x1="12.7" y1="58.42" x2="2.54" y2="58.42" width="0.1524" layer="91"/>
+<label x="2.54" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EN_A_3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA5"/>
+<wire x1="12.7" y1="63.5" x2="2.54" y2="63.5" width="0.1524" layer="91"/>
+<label x="2.54" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EN_A_2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PE3"/>
+<wire x1="12.7" y1="22.86" x2="2.54" y2="22.86" width="0.1524" layer="91"/>
+<label x="2.54" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EN_B_2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PE2"/>
+<wire x1="12.7" y1="25.4" x2="2.54" y2="25.4" width="0.1524" layer="91"/>
+<label x="2.54" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EN_B_1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA6"/>
+<wire x1="12.7" y1="60.96" x2="2.54" y2="60.96" width="0.1524" layer="91"/>
+<label x="2.54" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
