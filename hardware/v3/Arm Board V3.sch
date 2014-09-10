@@ -3712,12 +3712,6 @@ Using all header pins to connect to XL booster packs.</description>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="3.3V">
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="XBEE-1">
 <wire x1="-15.24" y1="12.7" x2="15.24" y2="12.7" width="0.254" layer="94"/>
 <wire x1="15.24" y1="12.7" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
@@ -3761,19 +3755,6 @@ Using all header pins to connect to XL booster packs.</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="3.3V" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="3.3V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -4324,9 +4305,6 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <part name="LED4" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="Green"/>
 <part name="R15" library="SparkFun-Resistors" deviceset="1KOHM1/10W1%(0603)" device="" value="1k"/>
 <part name="GND17" library="SparkFun" deviceset="GND" device=""/>
-<part name="P+2" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="P+3" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="+3V3" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="SJ2" library="SparkFun" deviceset="SOLDERJUMPER" device="TRACE"/>
 <part name="C16" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
 <part name="LED5" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="Green"/>
@@ -5362,6 +5340,13 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <label x="2.54" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="VBUS"/>
+<wire x1="12.7" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="91"/>
+<label x="5.08" y="5.08" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -5379,9 +5364,6 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <instance part="LED4" gate="G$1" x="17.78" y="71.12"/>
 <instance part="R15" gate="G$1" x="17.78" y="81.28" rot="R90"/>
 <instance part="GND17" gate="1" x="17.78" y="60.96"/>
-<instance part="P+2" gate="G$1" x="30.48" y="88.9"/>
-<instance part="P+3" gate="G$1" x="5.08" y="88.9"/>
-<instance part="+3V3" gate="G$1" x="-5.08" y="88.9"/>
 <instance part="SJ2" gate="1" x="68.58" y="45.72"/>
 <instance part="C16" gate="G$1" x="50.8" y="45.72" rot="R90"/>
 <instance part="LED5" gate="G$1" x="45.72" y="71.12"/>
@@ -5438,7 +5420,7 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <segment>
 <wire x1="-5.08" y1="66.04" x2="-5.08" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
-<label x="-5.08" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
+<label x="-5.08" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="DOUT"/>
@@ -5476,7 +5458,7 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <segment>
 <wire x1="45.72" y1="86.36" x2="45.72" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="2"/>
-<label x="45.72" y="88.9" size="1.27" layer="95" rot="R90" xref="yes"/>
+<label x="45.72" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RTS" class="0">
@@ -5495,7 +5477,7 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <segment>
 <wire x1="73.66" y1="45.72" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="SJ2" gate="1" pin="2"/>
-<label x="81.28" y="45.72" size="1.27" layer="95" xref="yes"/>
+<label x="81.28" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DIO2" class="0">
@@ -5556,7 +5538,7 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <segment>
 <wire x1="17.78" y1="86.36" x2="17.78" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
-<label x="17.78" y="88.9" size="1.27" layer="95" rot="R90" xref="yes"/>
+<label x="17.78" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DIO12" class="0">
@@ -5596,17 +5578,17 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <segment>
 <wire x1="-5.08" y1="86.36" x2="-5.08" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="1"/>
-<pinref part="+3V3" gate="G$1" pin="3.3V"/>
+<label x="-5.08" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="30.48" y1="88.9" x2="30.48" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
-<pinref part="P+2" gate="G$1" pin="3.3V"/>
+<label x="30.48" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="5.08" y1="86.36" x2="5.08" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="1"/>
-<pinref part="P+3" gate="G$1" pin="3.3V"/>
+<label x="5.08" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TXD3" class="0">
@@ -5618,7 +5600,7 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <segment>
 <wire x1="5.08" y1="66.04" x2="5.08" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="LED3" gate="G$1" pin="C"/>
-<label x="5.08" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
+<label x="5.08" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="XRESET" class="0">
@@ -5630,7 +5612,7 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <segment>
 <wire x1="45.72" y1="45.72" x2="35.56" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="1"/>
-<label x="35.56" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="35.56" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
