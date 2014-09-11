@@ -5305,46 +5305,95 @@ LilyPad 1206- DIO-09912&lt;br&gt;
 <label x="45.72" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="VBUS"/>
+<wire x1="12.7" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="91"/>
+<label x="5.08" y="5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="IN2_A_1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PD0"/>
+<wire x1="43.18" y1="53.34" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
+<label x="45.72" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="IN1_B_1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PD2"/>
+<wire x1="43.18" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
+<label x="45.72" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="IN2_B_1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PD3"/>
+<wire x1="43.18" y1="45.72" x2="50.8" y2="45.72" width="0.1524" layer="91"/>
+<label x="45.72" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
 <net name="EN_A_1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA7"/>
-<wire x1="12.7" y1="58.42" x2="2.54" y2="58.42" width="0.1524" layer="91"/>
-<label x="2.54" y="58.42" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PE1"/>
+<wire x1="12.7" y1="27.94" x2="2.54" y2="27.94" width="0.1524" layer="91"/>
+<label x="2.54" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="EN_A_3" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PA5"/>
-<wire x1="12.7" y1="63.5" x2="2.54" y2="63.5" width="0.1524" layer="91"/>
-<label x="2.54" y="63.5" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="EN_A_2" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PE3"/>
-<wire x1="12.7" y1="22.86" x2="2.54" y2="22.86" width="0.1524" layer="91"/>
-<label x="2.54" y="22.86" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="EN_B_2" class="0">
+<net name="EN_B_1" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PE2"/>
 <wire x1="12.7" y1="25.4" x2="2.54" y2="25.4" width="0.1524" layer="91"/>
 <label x="2.54" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="EN_B_1" class="0">
+<net name="IN1_A_1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA6"/>
-<wire x1="12.7" y1="60.96" x2="2.54" y2="60.96" width="0.1524" layer="91"/>
-<label x="2.54" y="60.96" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PD1"/>
+<wire x1="43.18" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
+<label x="45.72" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="IN1_B_2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VBUS"/>
-<wire x1="12.7" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="91"/>
-<label x="5.08" y="5.08" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PA2"/>
+<wire x1="12.7" y1="71.12" x2="2.54" y2="71.12" width="0.1524" layer="91"/>
+<label x="2.54" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="IN2_A_2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA3"/>
+<wire x1="12.7" y1="68.58" x2="2.54" y2="68.58" width="0.1524" layer="91"/>
+<label x="2.54" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="IN1_A_2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA4"/>
+<wire x1="12.7" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
+<label x="2.54" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EN_B_2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB6"/>
+<wire x1="43.18" y1="60.96" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
+<label x="45.72" y="60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EN_A_2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB7"/>
+<wire x1="43.18" y1="58.42" x2="50.8" y2="58.42" width="0.1524" layer="91"/>
+<label x="45.72" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="IN2_B_2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PE0"/>
+<wire x1="12.7" y1="30.48" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
+<label x="2.54" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
