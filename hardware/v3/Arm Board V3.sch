@@ -5538,8 +5538,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <sheet>
 <description>Processor</description>
 <plain>
-<text x="53.34" y="73.66" size="1.778" layer="91" align="center-left">TEMP!!!
-REPLACE!!!</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="27.94" y="43.18"/>
@@ -5773,30 +5771,37 @@ REPLACE!!!</text>
 </net>
 <net name="IN1_B_2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA2"/>
-<wire x1="12.7" y1="71.12" x2="2.54" y2="71.12" width="0.1524" layer="91"/>
-<label x="2.54" y="71.12" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PF2"/>
+<wire x1="43.18" y1="25.4" x2="53.34" y2="25.4" width="0.1524" layer="91"/>
+<label x="45.72" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="IN2_A_2" class="0">
+<net name="IN2_B_2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA3"/>
-<wire x1="12.7" y1="68.58" x2="2.54" y2="68.58" width="0.1524" layer="91"/>
-<label x="2.54" y="68.58" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="IN1_A_2" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PA4"/>
-<wire x1="12.7" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
-<label x="2.54" y="66.04" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PF3"/>
+<wire x1="43.18" y1="22.86" x2="53.34" y2="22.86" width="0.1524" layer="91"/>
+<label x="45.72" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EN_B_2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB6"/>
-<wire x1="43.18" y1="60.96" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
-<label x="45.72" y="60.96" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="PB2"/>
+<wire x1="43.18" y1="71.12" x2="50.8" y2="71.12" width="0.1524" layer="91"/>
+<label x="45.72" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="IN1_A_2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PE0"/>
+<wire x1="12.7" y1="30.48" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
+<label x="2.54" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="IN2_A_2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PF0"/>
+<wire x1="43.18" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
+<label x="45.72" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EN_A_2" class="0">
@@ -5806,29 +5811,25 @@ REPLACE!!!</text>
 <label x="45.72" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="IN2_B_2" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PE0"/>
-<wire x1="12.7" y1="30.48" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
-<label x="2.54" y="30.48" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="EN_A_3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB0"/>
-<wire x1="43.18" y1="76.2" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="IN1_A_3" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PB1"/>
-<wire x1="43.18" y1="73.66" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="PB6"/>
+<wire x1="43.18" y1="60.96" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
+<label x="45.72" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IN2_A_3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PB2"/>
-<wire x1="43.18" y1="71.12" x2="50.8" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="PA4"/>
+<wire x1="12.7" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
+<label x="2.54" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="IN1_A_3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA3"/>
+<wire x1="12.7" y1="68.58" x2="2.54" y2="68.58" width="0.1524" layer="91"/>
+<label x="2.54" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -6104,10 +6105,4 @@ REPLACE!!!</text>
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
