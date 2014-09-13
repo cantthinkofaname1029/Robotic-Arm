@@ -1443,7 +1443,7 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="165.1" y="76.2"/>
 <vertex x="165.1" y="0"/>
 </polygon>
-<polygon width="0.4064" layer="1" rank="2">
+<polygon width="0.4064" layer="1" thermals="no" rank="2">
 <vertex x="0" y="28.575"/>
 <vertex x="0" y="0"/>
 <vertex x="165.1" y="0"/>
