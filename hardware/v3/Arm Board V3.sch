@@ -4483,30 +4483,30 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
-<part name="C8" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
-<part name="C11" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
+<part name="R8" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100k"/>
+<part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100k"/>
+<part name="C8" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="5.6nF"/>
+<part name="C11" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="5.6nF"/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="D6" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148"/>
-<part name="D5" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148"/>
-<part name="C10" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
-<part name="C9" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
-<part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
-<part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
-<part name="C4" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
-<part name="C7" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
+<part name="D6" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148" value="1N4148"/>
+<part name="D5" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148" value="1N4148"/>
+<part name="C10" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="220nF"/>
+<part name="C9" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="10nF"/>
+<part name="R7" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100k"/>
+<part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100k"/>
+<part name="C4" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="5.6nF"/>
+<part name="C7" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="5.6nF"/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="D4" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148"/>
-<part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148"/>
-<part name="C6" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
-<part name="C5" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
-<part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="D4" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148" value="1N4148"/>
+<part name="D3" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148" value="1N4148"/>
+<part name="C6" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="220nF"/>
+<part name="C5" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="10nF"/>
+<part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -4515,14 +4515,14 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="GND39" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND44" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND46" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
-<part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
+<part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100k"/>
+<part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="5.6nF"/>
 <part name="GND47" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148"/>
-<part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148"/>
-<part name="C3" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
-<part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
-<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
+<part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148" value="1N4148"/>
+<part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148" value="1N4148"/>
+<part name="C3" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="220nF"/>
+<part name="C2" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="10nF"/>
+<part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="GND53" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND54" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="220"/>
@@ -4660,6 +4660,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="104.14" y1="38.1" x2="104.14" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="2"/>
 <pinref part="C15" gate="G$1" pin="2"/>
+<junction x="88.9" y="38.1"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="A1" pin="GND"/>
@@ -4671,6 +4672,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="139.7" y1="38.1" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="C14" gate="G$1" pin="2"/>
 <pinref part="C17" gate="G$1" pin="2"/>
+<junction x="124.46" y="38.1"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="12.7" x2="88.9" y2="10.16" width="0.1524" layer="91"/>
@@ -4682,6 +4684,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="C18" gate="G$1" pin="2"/>
 <pinref part="C19" gate="G$1" pin="2"/>
 <pinref part="IC6" gate="A1" pin="GND"/>
+<junction x="88.9" y="10.16"/>
 </segment>
 <segment>
 <wire x1="124.46" y1="12.7" x2="124.46" y2="10.16" width="0.1524" layer="91"/>
@@ -4693,6 +4696,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="C20" gate="G$1" pin="2"/>
 <pinref part="C21" gate="G$1" pin="2"/>
 <pinref part="IC7" gate="A1" pin="GND"/>
+<junction x="124.46" y="10.16"/>
 </segment>
 <segment>
 <wire x1="160.02" y1="12.7" x2="160.02" y2="10.16" width="0.1524" layer="91"/>
@@ -4704,6 +4708,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="C22" gate="G$1" pin="2"/>
 <pinref part="C23" gate="G$1" pin="2"/>
 <pinref part="IC9" gate="A1" pin="GND"/>
+<junction x="160.02" y="10.16"/>
 </segment>
 </net>
 <net name="A1_1" class="0">
@@ -5594,6 +5599,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="43.18" y1="5.08" x2="48.26" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="5.08" x2="48.26" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
+<junction x="48.26" y="5.08"/>
 </segment>
 </net>
 <net name="RXD1" class="0">
@@ -6103,6 +6109,36 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,2,43.18,109.22,IC3,EN_B,,,,"/>
+<approved hash="202,2,12.7,109.22,IC3,IN1_B,,,,"/>
+<approved hash="202,2,12.7,106.68,IC3,IN2_B,,,,"/>
+<approved hash="104,3,43.18,25.4,U1,VCC,+3V3,,,"/>
+<approved hash="104,4,12.7,7.62,U$1,3.3V,+3V3,,,"/>
+<approved hash="104,4,12.7,5.08,U$1,VBUS,+5V,,,"/>
+<approved hash="104,4,43.18,10.16,U$1,RST,RESET,,,"/>
+<approved hash="104,4,43.18,5.08,U$1,GND2,GND,,,"/>
+<approved hash="104,5,27.94,25.4,U2,VDD,+3V3,,,"/>
+<approved hash="106,5,68.58,5.08,CTS,,,,,"/>
+<approved hash="106,5,68.58,25.4,DIO0,,,,,"/>
+<approved hash="106,5,68.58,22.86,DIO1,,,,,"/>
+<approved hash="106,5,68.58,20.32,DIO2,,,,,"/>
+<approved hash="106,5,68.58,2.54,DIO4,,,,,"/>
+<approved hash="106,5,68.58,7.62,DIO9,,,,,"/>
+<approved hash="106,5,27.94,10.16,DIO11,,,,,"/>
+<approved hash="106,5,27.94,17.78,DIO12,,,,,"/>
+<approved hash="106,5,27.94,5.08,DTR,,,,,"/>
+<approved hash="106,5,27.94,7.62,RES1,,,,,"/>
+<approved hash="106,5,68.58,10.16,RES2,,,,,"/>
+<approved hash="106,4,43.18,10.16,RESET,,,,,"/>
+<approved hash="209,5,68.58,15.24,RTS,,,,,"/>
+<approved hash="106,5,68.58,15.24,RTS,,,,,"/>
+<approved hash="108,4,48.26,5.08,GND,,,,,"/>
+<approved hash="113,1,24.4687,39.9203,H1,,,,,"/>
+<approved hash="113,1,34.6287,39.9203,H2,,,,,"/>
+<approved hash="113,1,44.7887,39.9203,H3,,,,,"/>
+<approved hash="113,1,54.9487,39.9203,H4,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
