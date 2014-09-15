@@ -1092,7 +1092,7 @@ Source: http://www.st.com/stonline/books/pdf/docs/9426.pdf</description>
 </package>
 </packages>
 <symbols>
-<symbol name="L6208">
+<symbol name="L6206">
 <wire x1="-12.7" y1="17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
 <wire x1="12.7" y1="17.78" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
@@ -1130,10 +1130,10 @@ Source: http://www.st.com/stonline/books/pdf/docs/9426.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="L6208" prefix="IC">
+<deviceset name="L6206" prefix="IC">
 <description>&lt;b&gt;DUAL DMOS FULL BRIDGE MOTOR DRIVER&lt;/b&gt;</description>
 <gates>
-<gate name="G$1" symbol="L6208" x="0" y="0"/>
+<gate name="G$1" symbol="L6206" x="0" y="0"/>
 </gates>
 <devices>
 <device name="D" package="SO24">
@@ -4474,9 +4474,9 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M02" device="5MM"/>
 <part name="JP5" library="SparkFun-Connectors" deviceset="M02" device="5MM"/>
 <part name="JP6" library="SparkFun-Connectors" deviceset="M02" device="5MM"/>
-<part name="IC1" library="L6206D" deviceset="L6208" device="D"/>
-<part name="IC2" library="L6206D" deviceset="L6208" device="D"/>
-<part name="IC3" library="L6206D" deviceset="L6208" device="D"/>
+<part name="IC1" library="L6206D" deviceset="L6206" device="D"/>
+<part name="IC2" library="L6206D" deviceset="L6206" device="D"/>
+<part name="IC3" library="L6206D" deviceset="L6206" device="D"/>
 <part name="U1" library="maxim" deviceset="MAX34*" device="PA" technology="68C" value="MAX3468CPA"/>
 <part name="CN1" library="adafruit" deviceset="1X4" device="-BIG"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M02" device="5MM"/>
