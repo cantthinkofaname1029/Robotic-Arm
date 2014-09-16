@@ -5777,9 +5777,9 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="202,2,43.18,109.22,IC3,EN_B,,,,"/>
-<approved hash="202,2,12.7,109.22,IC3,IN1_B,,,,"/>
-<approved hash="202,2,12.7,106.68,IC3,IN2_B,,,,"/>
+<approved hash="202,2,43.18,104.14,IC3,EN_B,,,,"/>
+<approved hash="202,2,12.7,104.14,IC3,IN1_B,,,,"/>
+<approved hash="202,2,12.7,101.6,IC3,IN2_B,,,,"/>
 <approved hash="104,3,43.18,25.4,U1,VCC,+3V3,,,"/>
 <approved hash="104,4,12.7,7.62,U$1,3.3V,+3V3,,,"/>
 <approved hash="104,4,12.7,5.08,U$1,VBUS,+5V,,,"/>
@@ -5800,7 +5800,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <approved hash="106,4,43.18,10.16,RESET,,,,,"/>
 <approved hash="209,5,68.58,15.24,RTS,,,,,"/>
 <approved hash="106,5,68.58,15.24,RTS,,,,,"/>
-<approved hash="108,4,48.26,5.08,GND,,,,,"/>
 <approved hash="113,1,24.4687,39.9203,H1,,,,,"/>
 <approved hash="113,1,34.6287,39.9203,H2,,,,,"/>
 <approved hash="113,1,44.7887,39.9203,H3,,,,,"/>
