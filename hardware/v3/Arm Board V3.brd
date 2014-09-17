@@ -153,7 +153,6 @@
 <plain>
 <wire x1="0" y1="0" x2="165.1" y2="0" width="0" layer="20"/>
 <wire x1="165.1" y1="0" x2="165.1" y2="76.2" width="0" layer="20"/>
-<wire x1="165.1" y1="76.2" x2="107.95" y2="76.2" width="0" layer="20"/>
 <wire x1="107.95" y1="76.2" x2="82.55" y2="76.2" width="0" layer="20"/>
 <wire x1="82.55" y1="76.2" x2="57.15" y2="76.2" width="0" layer="20"/>
 <wire x1="57.15" y1="76.2" x2="0" y2="76.2" width="0" layer="20"/>
@@ -184,6 +183,23 @@ Mars Rover Design Team
 Robotic Arm Bord
 September 2014
 #ROVESOHARD</text>
+<text x="45.72" y="6.35" size="1.27" layer="25" align="center">Encoder 1</text>
+<text x="57.15" y="6.35" size="1.27" layer="25" align="center">Encoder 2</text>
+<text x="41.91" y="73.66" size="1.27" layer="25" align="center">5V LDO</text>
+<text x="16.51" y="73.66" size="1.27" layer="25" align="center">3V3 LDO</text>
+<text x="45.72" y="29.21" size="1.27" layer="25" align="center">12V LDO</text>
+<text x="67.31" y="26.67" size="1.27" layer="25" rot="R270" align="center">12V LDO</text>
+<text x="129.54" y="68.58" size="1.27" layer="25" rot="R90" align="center">18V LDO</text>
+<text x="16.51" y="8.89" size="1.27" layer="25" align="center">A1_1</text>
+<text x="21.59" y="8.89" size="1.27" layer="25" align="center">A2_1</text>
+<text x="29.21" y="8.89" size="1.27" layer="25" align="center">B1_1</text>
+<text x="34.29" y="8.89" size="1.27" layer="25" align="center">B2_1</text>
+<text x="85.09" y="8.89" size="1.27" layer="25" align="center">A1_3</text>
+<text x="80.01" y="8.89" size="1.27" layer="25" align="center">A2_3</text>
+<text x="130.81" y="8.89" size="1.27" layer="25" align="center">A1_2</text>
+<text x="135.89" y="8.89" size="1.27" layer="25" align="center">A2_2</text>
+<text x="143.51" y="8.89" size="1.27" layer="25" align="center">B1_2</text>
+<text x="148.59" y="8.89" size="1.27" layer="25" align="center">B2_2</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -1322,7 +1338,7 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <element name="C1" library="SparkFun-Capacitors" package="0603-CAP" value="5.6nF" x="90.17" y="13.6525" rot="R90">
 <attribute name="PROD_ID" value="CAP-00810" x="90.17" y="13.6525" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="CN1" library="adafruit" package="1X04-BIG" value="1X4-BIG" x="124.46" y="63.5" rot="R90"/>
+<element name="CN1" library="adafruit" package="1X04-BIG" value="1X4-BIG" x="124.46" y="63.5" smashed="yes" rot="R90"/>
 <element name="D6" library="SparkFun-DiscreteSemi" package="DIODE-1N4148" value="1N4148" x="13.97" y="19.685" rot="R270"/>
 <element name="D5" library="SparkFun-DiscreteSemi" package="DIODE-1N4148" value="1N4148" x="10.795" y="19.685" rot="R90"/>
 <element name="D4" library="SparkFun-DiscreteSemi" package="DIODE-1N4148" value="1N4148" x="128.27" y="19.685" rot="R270"/>
@@ -1356,16 +1372,24 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <element name="U$1" library="StellarisLaunchPad_Fred" package="LAUNCHPAD-XL" value="STELLARIS-LAUNCHPADSTELLARIS-LAUNCHPAD-XL" x="3.81" y="93.98" smashed="yes" rot="R270"/>
 <element name="U$3" library="SparkFun-Connectors" package="RJ45-8" value="RJ45-8PTH" x="113.03" y="55.245" rot="R180"/>
 <element name="R10" library="SparkFun-Passives" package="0603-RES" value="120 Ohm" x="123.19" y="49.53" rot="R90"/>
-<element name="Q3" library="PCB0M1" package="DIP8" value="Q_LTC490" x="129.54" y="52.07" rot="R90"/>
+<element name="Q3" library="PCB0M1" package="DIP8" value="Q_LTC490" x="129.54" y="52.07" smashed="yes" rot="R90"/>
 <element name="R11" library="SparkFun-Passives" package="0603-RES" value="120 Ohm" x="123.19" y="54.61" rot="R90"/>
 <element name="C12" library="SparkFun-Capacitors" package="0603-CAP" value=".1uF" x="133.35" y="60.325" rot="R90">
 <attribute name="PROD_ID" value="CAP-08604" x="133.35" y="60.325" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" value="0.1uF" x="133.35" y="60.325" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="H1" library="Lib_TH" package="H_MNTHOLE_#4" value="" x="5.3975" y="5.3975"/>
-<element name="H2" library="Lib_TH" package="H_MNTHOLE_#4" value="" x="5.3975" y="70.8025"/>
-<element name="H3" library="Lib_TH" package="H_MNTHOLE_#4" value="" x="159.7025" y="70.8025"/>
-<element name="H4" library="Lib_TH" package="H_MNTHOLE_#4" value="" x="159.7025" y="5.3975"/>
+<element name="H1" library="Lib_TH" package="H_MNTHOLE_#4" value="" x="5.3975" y="5.3975" smashed="yes">
+<attribute name="VALUE" x="1.5875" y="-2.2225" size="1.27" layer="27"/>
+</element>
+<element name="H2" library="Lib_TH" package="H_MNTHOLE_#4" value="" x="5.3975" y="70.8025" smashed="yes">
+<attribute name="VALUE" x="1.5875" y="63.1825" size="1.27" layer="27"/>
+</element>
+<element name="H3" library="Lib_TH" package="H_MNTHOLE_#4" value="" x="159.7025" y="70.8025" smashed="yes">
+<attribute name="VALUE" x="155.8925" y="63.1825" size="1.27" layer="27"/>
+</element>
+<element name="H4" library="Lib_TH" package="H_MNTHOLE_#4" value="" x="159.7025" y="5.3975" smashed="yes">
+<attribute name="VALUE" x="155.8925" y="-2.2225" size="1.27" layer="27"/>
+</element>
 <element name="R12" library="SparkFun-Resistors" package="0603-RES" value="1k" x="150.4188" y="65.7606">
 <attribute name="PROD_ID" value="RES-07856" x="150.4188" y="65.7606" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="1K" x="150.4188" y="65.7606" size="1.778" layer="27" display="off"/>
@@ -1412,8 +1436,8 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <attribute name="PROD_ID" value="RES-07856" x="150.4696" y="67.7926" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="1K" x="150.4696" y="67.7926" size="1.778" layer="27" display="off"/>
 </element>
-<element name="IC4" library="linear" package="TO220V" value="7812TV" x="65.405" y="26.035" rot="R270"/>
-<element name="IC5" library="linear" package="TO220V" value="7812TV" x="135.255" y="68.58" rot="R270"/>
+<element name="IC4" library="linear" package="TO220V" value="7812TV" x="65.405" y="26.035" smashed="yes" rot="R270"/>
+<element name="IC5" library="linear" package="TO220V" value="7812TV" x="135.255" y="68.58" smashed="yes" rot="R270"/>
 <element name="C13" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="58.42" y="27.305" rot="R180">
 <attribute name="PROD_ID" value="CAP-00810" x="58.42" y="27.305" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
@@ -1432,31 +1456,37 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <element name="C19" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="43.18" y="19.05" rot="R270">
 <attribute name="PROD_ID" value="CAP-00810" x="40.64" y="22.86" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="IC6" library="linear" package="TO220V" value="7812TV" x="45.72" y="22.86" rot="R180"/>
+<element name="IC6" library="linear" package="TO220V" value="7812TV" x="45.72" y="22.86" smashed="yes" rot="R180"/>
 <element name="C20" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="25.4" y="67.31" rot="R90">
 <attribute name="PROD_ID" value="CAP-00810" x="15.24" y="67.31" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C21" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="31.75" y="66.04" rot="R180">
 <attribute name="PROD_ID" value="CAP-00810" x="35.56" y="59.69" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="IC7" library="linear" package="TO252" value="7812DT" x="40.64" y="68.58" rot="R270"/>
+<element name="IC7" library="linear" package="TO252" value="7812DT" x="40.64" y="68.58" smashed="yes" rot="R270"/>
 <element name="C22" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="33.02" y="69.85" rot="R270">
 <attribute name="PROD_ID" value="CAP-00810" x="43.18" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C23" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="26.67" y="71.12">
 <attribute name="PROD_ID" value="CAP-00810" x="22.86" y="77.47" size="1.778" layer="27" display="off"/>
 </element>
-<element name="IC9" library="linear" package="TO252" value="7812DT" x="17.78" y="68.58" rot="R90"/>
+<element name="IC9" library="linear" package="TO252" value="7812DT" x="17.78" y="68.58" smashed="yes" rot="R90"/>
 <element name="U$2" library="SparkFun-Connectors" package="RJ45-8" value="RJ45-8PTH" x="161.29" y="27.94" rot="R90"/>
 <element name="R17" library="SparkFun-Passives" package="0603-RES" value="120 Ohm" x="157.7975" y="25.4" rot="MR270"/>
-<element name="Q1" library="PCB0M1" package="DIP8" value="Q_LTC490" x="158.75" y="15.24"/>
+<element name="Q1" library="PCB0M1" package="DIP8" value="Q_LTC490" x="158.75" y="15.24" smashed="yes"/>
 <element name="R18" library="SparkFun-Passives" package="0603-RES" value="120 Ohm" x="161.29" y="16.51" rot="MR180"/>
-<element name="C24" library="SparkFun-Capacitors" package="0603-CAP" value=".1uF" x="153.67" y="7.62" rot="MR270">
-<attribute name="PROD_ID" value="CAP-08604" x="139.7" y="55.88" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="C24" library="SparkFun-Capacitors" package="0603-CAP" value=".1uF" x="153.67" y="15.24" rot="MR90">
+<attribute name="PROD_ID" value="CAP-08604" x="167.64" y="-33.02" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="JP7" library="SparkFun-Connectors" package="1X03" value="" x="1.905" y="57.785" rot="R90"/>
-<element name="JP8" library="SparkFun-Connectors" package="1X04" value="" x="41.91" y="3.81"/>
-<element name="JP9" library="SparkFun-Connectors" package="1X04" value="" x="53.34" y="3.81"/>
+<element name="JP7" library="SparkFun-Connectors" package="1X03" value="" x="1.905" y="57.785" smashed="yes" rot="R90">
+<attribute name="VALUE" x="5.08" y="56.515" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP8" library="SparkFun-Connectors" package="1X04" value="" x="41.91" y="3.81" smashed="yes">
+<attribute name="VALUE" x="40.64" y="0.635" size="1.27" layer="27"/>
+</element>
+<element name="JP9" library="SparkFun-Connectors" package="1X04" value="" x="53.34" y="3.81" smashed="yes">
+<attribute name="VALUE" x="52.07" y="0.635" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2453,8 +2483,6 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <wire x1="138.85" y1="59.475" x2="139.7" y2="60.325" width="0.6096" layer="1"/>
 <contactref element="Q1" pad="1"/>
 <contactref element="C24" pad="1"/>
-<wire x1="153.67" y1="8.47" x2="153.67" y2="10.16" width="0.3048" layer="16"/>
-<wire x1="153.67" y1="10.16" x2="154.94" y2="11.43" width="0.3048" layer="16"/>
 <wire x1="154.94" y1="11.43" x2="154.94" y2="12.7" width="0.3048" layer="16"/>
 <wire x1="154.94" y1="12.7" x2="158.75" y2="16.51" width="0.3048" layer="16"/>
 <wire x1="158.75" y1="16.51" x2="158.75" y2="31.75" width="0.3048" layer="16"/>
@@ -2489,6 +2517,8 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <wire x1="60.96" y1="52.07" x2="64.77" y2="48.26" width="1.27" layer="16"/>
 <wire x1="64.77" y1="48.26" x2="97.79" y2="48.26" width="1.27" layer="16"/>
 <wire x1="97.79" y1="48.26" x2="101.6" y2="52.07" width="1.27" layer="16"/>
+<wire x1="153.67" y1="14.39" x2="153.67" y2="12.7" width="0.3048" layer="16"/>
+<wire x1="153.67" y1="12.7" x2="154.94" y2="11.43" width="0.3048" layer="16"/>
 </signal>
 <signal name="N$5">
 <contactref element="Q3" pad="5"/>
