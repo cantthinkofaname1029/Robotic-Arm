@@ -179,6 +179,11 @@ TX5</text>
 <text x="49.53" y="1.27" size="1.016" layer="25" align="center">A7</text>
 <text x="58.42" y="1.27" size="1.016" layer="25" align="center">A10</text>
 <text x="60.96" y="1.27" size="1.016" layer="25" align="center">A11</text>
+<text x="82.55" y="49.53" size="1.4224" layer="25" font="vector" align="top-center">Missouri S&amp;T
+Mars Rover Design Team
+Robotic Arm Bord
+September 2014
+#ROVESOHARD</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
