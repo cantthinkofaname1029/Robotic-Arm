@@ -1485,7 +1485,9 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <vertex x="0" y="28.575"/>
 <vertex x="0" y="0"/>
 <vertex x="165.1" y="0"/>
-<vertex x="165.1" y="28.575"/>
+<vertex x="165.1" y="41.91"/>
+<vertex x="153.67" y="41.91"/>
+<vertex x="153.67" y="29.21"/>
 </polygon>
 <contactref element="Q3" pad="4"/>
 <contactref element="C12" pad="2"/>
@@ -1573,8 +1575,6 @@ Min trace width, spacing, drill size and dimension clearance for Advanced Circui
 <contactref element="JP8" pad="1"/>
 <contactref element="JP9" pad="1"/>
 <via x="26.035" y="26.035" extent="1-16" drill="0.9" shape="octagon"/>
-<wire x1="154.94" y1="31.115" x2="159.385" y2="31.115" width="1.016" layer="1"/>
-<wire x1="159.385" y1="31.115" x2="161.925" y2="28.575" width="1.016" layer="1"/>
 </signal>
 <signal name="A1_1">
 <contactref element="JP2" pad="1"/>
