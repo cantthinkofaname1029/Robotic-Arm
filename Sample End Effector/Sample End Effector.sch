@@ -2751,7 +2751,7 @@ chip</description>
 <label x="129.54" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="V5" class="0">
+<net name="+5V" class="0">
 <segment>
 <pinref part="C1_1" gate="G$1" pin="2"/>
 <pinref part="P1" gate="G$1" pin="VCC"/>
