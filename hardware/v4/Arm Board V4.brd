@@ -1768,7 +1768,8 @@ Please make sure your boards conform to these design rules.</description>
 <via x="73.025" y="46.355" extent="1-16" drill="0.5"/>
 <wire x1="58.08" y1="33.02" x2="47.8155" y2="33.02" width="0.6096" layer="16"/>
 <via x="47.8155" y="33.02" extent="1-16" drill="0.5"/>
-<wire x1="47.8155" y1="33.02" x2="47.8155" y2="19.1389" width="0.6096" layer="1"/>
+<wire x1="47.8155" y1="33.02" x2="47.8155" y2="19.812" width="0.6096" layer="1"/>
+<wire x1="47.8155" y1="19.812" x2="47.8155" y2="19.1389" width="0.6096" layer="1"/>
 <wire x1="47.8155" y1="19.1389" x2="47.2186" y2="19.05" width="0.4064" layer="1"/>
 <via x="46.6725" y="19.05" extent="1-16" drill="0.5"/>
 <wire x1="46.6725" y1="19.05" x2="47.2186" y2="19.05" width="0.4064" layer="1"/>
@@ -1779,13 +1780,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="49.2125" y1="12.065" x2="57.785" y2="12.065" width="0.4064" layer="1"/>
 <wire x1="57.785" y1="12.065" x2="58.1025" y2="12.3825" width="0.4064" layer="1"/>
 <wire x1="58.1025" y1="12.3825" x2="58.1025" y2="13.97" width="0.4064" layer="1"/>
-<wire x1="46.6725" y1="19.05" x2="45.72" y2="19.05" width="0.4572" layer="1"/>
-<wire x1="45.72" y1="19.05" x2="45.4025" y2="19.3675" width="0.4572" layer="1"/>
-<wire x1="45.4025" y1="19.3675" x2="45.4025" y2="24.4475" width="0.4572" layer="1"/>
-<wire x1="45.4025" y1="24.4475" x2="44.7675" y2="25.0825" width="0.4572" layer="1"/>
-<wire x1="44.7675" y1="25.0825" x2="13.335" y2="25.0825" width="0.4572" layer="1"/>
-<wire x1="13.335" y1="25.0825" x2="12.7" y2="24.4475" width="0.4572" layer="1"/>
-<wire x1="12.7" y1="24.4475" x2="12.7" y2="5.08" width="0.4572" layer="1"/>
 <wire x1="94.615" y1="49.53" x2="93.98" y2="50.165" width="0.4572" layer="1"/>
 <wire x1="74.4825" y1="48.26" x2="74.4825" y2="49.7175" width="0.4572" layer="1"/>
 <wire x1="74.4825" y1="49.7175" x2="74.93" y2="50.165" width="0.4572" layer="1"/>
@@ -1801,6 +1795,18 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="111.5314" y1="42.5704" x2="111.5314" y2="43.9166" width="0.4572" layer="1"/>
 <wire x1="111.5314" y1="43.9166" x2="110.998" y2="44.45" width="0.4572" layer="1"/>
 <wire x1="110.998" y1="44.45" x2="102.362" y2="44.45" width="0.4572" layer="1"/>
+<wire x1="12.7" y1="5.08" x2="11.938" y2="5.08" width="0.6096" layer="1"/>
+<wire x1="11.938" y1="5.08" x2="11.43" y2="4.572" width="0.6096" layer="1"/>
+<wire x1="11.43" y1="4.572" x2="11.43" y2="1.778" width="0.6096" layer="1"/>
+<wire x1="11.43" y1="1.778" x2="11.938" y2="1.27" width="0.6096" layer="1"/>
+<wire x1="11.938" y1="1.27" x2="36.576" y2="1.27" width="0.6096" layer="1"/>
+<wire x1="36.576" y1="1.27" x2="37.084" y2="1.778" width="0.6096" layer="1"/>
+<wire x1="37.084" y1="1.778" x2="37.084" y2="5.588" width="0.6096" layer="1"/>
+<wire x1="37.084" y1="5.588" x2="36.322" y2="6.35" width="0.6096" layer="1"/>
+<wire x1="36.322" y1="6.35" x2="36.322" y2="19.558" width="0.6096" layer="1"/>
+<wire x1="36.322" y1="19.558" x2="36.83" y2="20.066" width="0.6096" layer="1"/>
+<wire x1="36.83" y1="20.066" x2="47.5615" y2="20.066" width="0.6096" layer="1"/>
+<wire x1="47.5615" y1="20.066" x2="47.8155" y2="19.812" width="0.6096" layer="1"/>
 </signal>
 <signal name="+12V">
 <contactref element="JP12" pad="2"/>
@@ -2351,6 +2357,9 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="18,29,7d64710171017d64"/>
 <approved hash="19,1,01101f641c18026c"/>
 <approved hash="19,1,e3cd79397f18e5ec"/>
+<approved hash="19,1,e7c53a7b2617fba9"/>
+<approved hash="19,1,c49ce7966d4b5c35"/>
+<approved hash="19,1,c728187c110a0e64"/>
 <approved hash="19,1,00941ee01f0c0178"/>
 <approved hash="19,1,e45d7ea97d10e7e4"/>
 <approved hash="19,1,4a4a307f3a7a404f"/>
@@ -2361,11 +2370,8 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,1,c1f59b8f9a9dc0e7"/>
 <approved hash="19,1,7e582ee629987926"/>
 <approved hash="19,1,26c0f4bee97b3b05"/>
-<approved hash="19,1,e7c53a7b2617fba9"/>
 <approved hash="19,1,cbd8dbecd891c8a5"/>
-<approved hash="19,1,c49ce7966d4b5c35"/>
 <approved hash="19,1,755d23293c9e6aea"/>
-<approved hash="19,1,c728187c110a0e64"/>
 </errors>
 </board>
 </drawing>
