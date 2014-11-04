@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5730,13 +5730,21 @@ with Current Source and Sink Capability</description>
 <part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="10k"/>
 <part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="10k"/>
 <part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="10k"/>
-<part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1k"/>
+<part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1.5k"/>
 <part name="LED5" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
 <part name="GND30" library="SparkFun" deviceset="GND" device=""/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M04" device="SCREW"/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="IC2" library="burr-brown" deviceset="REG1118" device=""/>
+<part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value=".1uF"/>
+<part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value=".1uF"/>
+<part name="C9" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value=".1uF"/>
+<part name="C10" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value=".1uF"/>
+<part name="C11" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value=".1uF"/>
+<part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND29" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5785,6 +5793,14 @@ with Current Source and Sink Capability</description>
 <instance part="GND3" gate="1" x="127" y="2.54"/>
 <instance part="GND17" gate="1" x="170.18" y="-17.78"/>
 <instance part="IC2" gate="G$1" x="170.18" y="0"/>
+<instance part="C2" gate="G$1" x="185.42" y="-5.08"/>
+<instance part="C4" gate="G$1" x="154.94" y="-5.08"/>
+<instance part="C9" gate="G$1" x="127" y="-2.54" rot="R90"/>
+<instance part="C10" gate="G$1" x="129.54" y="-5.08" rot="R90"/>
+<instance part="C11" gate="G$1" x="132.08" y="-7.62" rot="R90"/>
+<instance part="GND22" gate="1" x="119.38" y="-2.54" rot="R270"/>
+<instance part="GND24" gate="1" x="121.92" y="-5.08" rot="R270"/>
+<instance part="GND29" gate="1" x="124.46" y="-7.62" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -5886,6 +5902,25 @@ with Current Source and Sink Capability</description>
 <pinref part="IC2" gate="G$1" pin="GND"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 <wire x1="170.18" y1="-15.24" x2="170.18" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="154.94" y1="-7.62" x2="154.94" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="-12.7" x2="170.18" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="-7.62" x2="185.42" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="-12.7" x2="170.18" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="170.18" y="-12.7"/>
+</segment>
+<segment>
+<pinref part="C9" gate="G$1" pin="1"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="GND29" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -5907,7 +5942,8 @@ with Current Source and Sink Capability</description>
 <segment>
 <pinref part="JP4" gate="G$1" pin="3"/>
 <wire x1="132.08" y1="5.08" x2="132.08" y2="-5.08" width="0.1524" layer="91"/>
-<label x="132.08" y="-5.08" size="1.778" layer="95" rot="R180"/>
+<label x="132.08" y="-5.08" size="1.778" layer="95" rot="R270"/>
+<pinref part="C10" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -5924,11 +5960,16 @@ with Current Source and Sink Capability</description>
 <segment>
 <pinref part="JP4" gate="G$1" pin="4"/>
 <wire x1="134.62" y1="5.08" x2="134.62" y2="-7.62" width="0.1524" layer="91"/>
-<label x="134.62" y="-7.62" size="1.778" layer="95" rot="R180"/>
+<label x="134.62" y="-7.62" size="1.778" layer="95" rot="R270"/>
+<pinref part="C11" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="152.4" y1="0" x2="157.48" y2="0" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="0" x2="154.94" y2="0" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="VIN"/>
+<label x="152.4" y="0" size="1.778" layer="95"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="154.94" y1="0" x2="157.48" y2="0" width="0.1524" layer="91"/>
+<junction x="154.94" y="0"/>
 </segment>
 </net>
 <net name="14.8V" class="0">
@@ -5979,7 +6020,8 @@ with Current Source and Sink Capability</description>
 <segment>
 <pinref part="JP4" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="5.08" x2="129.54" y2="-2.54" width="0.1524" layer="91"/>
-<label x="129.54" y="-2.54" size="1.778" layer="95" rot="R180"/>
+<label x="129.54" y="-2.54" size="1.778" layer="95" rot="R270"/>
+<pinref part="C9" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="DC_1" class="0">
@@ -6053,8 +6095,12 @@ with Current Source and Sink Capability</description>
 </net>
 <net name="+3.3V" class="0">
 <segment>
-<wire x1="182.88" y1="0" x2="187.96" y2="0" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="0" x2="185.42" y2="0" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="VOUT"/>
+<label x="182.88" y="0" size="1.778" layer="95"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="185.42" y1="0" x2="187.96" y2="0" width="0.1524" layer="91"/>
+<junction x="185.42" y="0"/>
 </segment>
 </net>
 </nets>
