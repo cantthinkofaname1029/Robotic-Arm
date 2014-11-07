@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1361,21 +1361,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="0" y1="-1.5" x2="-1.5" y2="-1.5" width="0.3048" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="2.2" width="0.3048" layer="21"/>
 </package>
-<package name="JST-2-PTH">
-<wire x1="-2" y1="0" x2="-2" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-2" y1="-1.6" x2="-2.95" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-2.95" y1="-1.6" x2="-2.95" y2="6" width="0.2032" layer="21"/>
-<wire x1="-2.95" y1="6" x2="2.95" y2="6" width="0.2032" layer="21"/>
-<wire x1="2.95" y1="6" x2="2.95" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="2.95" y1="-1.6" x2="2" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="2" y1="-1.6" x2="2" y2="0" width="0.2032" layer="21"/>
-<pad name="1" x="-1" y="0" drill="0.7" diameter="1.4478"/>
-<pad name="2" x="1" y="0" drill="0.7" diameter="1.4478"/>
-<text x="-1.27" y="5.27" size="0.4064" layer="25">&gt;Name</text>
-<text x="-1.27" y="4" size="0.4064" layer="27">&gt;Value</text>
-<text x="0.6" y="0.7" size="1.27" layer="51">+</text>
-<text x="-1.4" y="0.7" size="1.27" layer="51">-</text>
-</package>
 <package name="JST-2-PTH-NS">
 <wire x1="-2" y1="0" x2="-2" y2="-1.8" width="0.2032" layer="51"/>
 <wire x1="-2" y1="-1.8" x2="-3" y2="-1.8" width="0.2032" layer="51"/>
@@ -1391,21 +1376,20 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="0.6" y="0.7" size="1.27" layer="51">+</text>
 <text x="-1.4" y="0.7" size="1.27" layer="51">-</text>
 </package>
-<package name="JST-2-PTH-VERT">
-<wire x1="-2.95" y1="-2.25" x2="-2.95" y2="2.25" width="0.2032" layer="21"/>
-<wire x1="-2.95" y1="2.25" x2="2.95" y2="2.25" width="0.2032" layer="21"/>
-<wire x1="2.95" y1="2.25" x2="2.95" y2="-2.25" width="0.2032" layer="21"/>
-<wire x1="2.95" y1="-2.25" x2="1" y2="-2.25" width="0.2032" layer="21"/>
-<wire x1="-1" y1="-2.25" x2="-2.95" y2="-2.25" width="0.2032" layer="21"/>
-<wire x1="-1" y1="-1.75" x2="1" y2="-1.75" width="0.2032" layer="21"/>
-<wire x1="1" y1="-1.75" x2="1" y2="-2.25" width="0.2032" layer="21"/>
-<wire x1="-1" y1="-1.75" x2="-1" y2="-2.25" width="0.2032" layer="21"/>
-<pad name="1" x="-1" y="-0.55" drill="0.7" diameter="1.6256"/>
-<pad name="2" x="1" y="-0.55" drill="0.7" diameter="1.6256"/>
-<text x="-1.984" y="3" size="0.4064" layer="25">&gt;Name</text>
-<text x="2.016" y="3" size="0.4064" layer="27">&gt;Value</text>
-<text x="0.616" y="0.75" size="1.27" layer="51">+</text>
-<text x="-1.384" y="0.75" size="1.27" layer="51">-</text>
+<package name="JST-2-PTH">
+<wire x1="-2" y1="0" x2="-2" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="-2" y1="-1.8" x2="-3" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="-3" y1="-1.8" x2="-3" y2="6" width="0.2032" layer="21"/>
+<wire x1="-3" y1="6" x2="3" y2="6" width="0.2032" layer="21"/>
+<wire x1="3" y1="6" x2="3" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="3" y1="-1.8" x2="2" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="2" y1="-1.8" x2="2" y2="0" width="0.2032" layer="21"/>
+<pad name="1" x="-1" y="0" drill="0.7" diameter="1.4478"/>
+<pad name="2" x="1" y="0" drill="0.7" diameter="1.4478"/>
+<text x="-1.27" y="5.27" size="0.4064" layer="25">&gt;Name</text>
+<text x="-1.27" y="4" size="0.4064" layer="27">&gt;Value</text>
+<text x="0.6" y="0.7" size="1.27" layer="51">+</text>
+<text x="-1.4" y="0.7" size="1.27" layer="51">-</text>
 </package>
 </packages>
 <symbols>
@@ -1622,9 +1606,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="SKU" value="PRT-09914" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="PTH4" package="1X02_XTRA_BIG">
@@ -1685,15 +1667,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connects>
 <connect gate="G$1" pin="1" pad="P1"/>
 <connect gate="G$1" pin="2" pad="P2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="JST-PTH-VERT" package="JST-2-PTH-VERT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5583,68 +5556,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </deviceset>
 </devicesets>
 </library>
-<library name="burr-brown">
-<description>&lt;b&gt;Burr-Brown Components&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SOT223">
-<description>&lt;b&gt;Smal Outline Transistor&lt;/b&gt;</description>
-<wire x1="-3.124" y1="1.731" x2="-3.124" y2="-1.729" width="0.1524" layer="21"/>
-<wire x1="3.124" y1="-1.729" x2="3.124" y2="1.731" width="0.1524" layer="21"/>
-<wire x1="-3.124" y1="1.731" x2="3.124" y2="1.731" width="0.1524" layer="21"/>
-<wire x1="3.124" y1="-1.729" x2="-3.124" y2="-1.729" width="0.1524" layer="21"/>
-<smd name="1" x="-2.2606" y="-3.1496" dx="1.4986" dy="2.0066" layer="1"/>
-<smd name="2" x="0.0254" y="-3.1496" dx="1.4986" dy="2.0066" layer="1"/>
-<smd name="3" x="2.3114" y="-3.1496" dx="1.4986" dy="2.0066" layer="1"/>
-<smd name="4" x="0" y="3.1496" dx="3.81" dy="2.0066" layer="1"/>
-<text x="-2.54" y="4.318" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.794" y="-5.842" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.524" y1="1.778" x2="1.524" y2="3.302" layer="51"/>
-<rectangle x1="-2.667" y1="-3.302" x2="-1.905" y2="-1.778" layer="51"/>
-<rectangle x1="1.905" y1="-3.302" x2="2.667" y2="-1.778" layer="51"/>
-<rectangle x1="-0.381" y1="-3.302" x2="0.381" y2="-1.778" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="REG1118">
-<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="7.62" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-7.62" width="0.4064" layer="94"/>
-<text x="-7.62" y="5.715" size="1.778" layer="95" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="2.54" size="1.778" layer="96" ratio="10">&gt;VALUE</text>
-<pin name="VIN" x="-12.7" y="0" length="middle" direction="in"/>
-<pin name="VOUT" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
-<pin name="GND" x="0" y="-12.7" length="middle" direction="pwr" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="REG1118" prefix="IC">
-<description>&lt;b&gt;800mA Low Dropout (LDO) Positive Regulator&lt;/b&gt;&lt;p&gt;
-with Current Source and Sink Capability</description>
-<gates>
-<gate name="G$1" symbol="REG1118" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT223">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="VIN" pad="3"/>
-<connect gate="G$1" pin="VOUT" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="REG1118-2.85/2K5G4" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="14M2185" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5685,7 +5596,7 @@ with Current Source and Sink Capability</description>
 <part name="R14" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1k"/>
 <part name="U2" library="SparkFun" deviceset="XBEE-1" device="B3"/>
 <part name="JP7" library="SparkFun-Connectors" deviceset="M03" device="POLAR"/>
-<part name="JP8" library="SparkFun-Connectors" deviceset="M02" device="5MM"/>
+<part name="JP8" library="SparkFun-Connectors" deviceset="M02" device="3.5MM" value="M023.5MM"/>
 <part name="JP9" library="SparkFun-Connectors" deviceset="M03" device="POLAR"/>
 <part name="JP10" library="SparkFun-Connectors" deviceset="M03" device="POLAR"/>
 <part name="JP11" library="SparkFun-Connectors" deviceset="M03" device="POLAR"/>
@@ -5711,7 +5622,7 @@ with Current Source and Sink Capability</description>
 <part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C3" library="SparkFun-Passives" deviceset="CAP_POL" device="C"/>
 <part name="U$4" library="MAX3077" deviceset="MAX3077" device=""/>
-<part name="JP3" library="SparkFun-Connectors" deviceset="M02" device="5MM"/>
+<part name="JP3" library="SparkFun-Connectors" deviceset="M02" device="3.5MM" value="M023.5MM"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U3" library="SparkFun-DigitalIC" deviceset="LSM9DS0" device=""/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value=".22uF"/>
@@ -5733,16 +5644,6 @@ with Current Source and Sink Capability</description>
 <part name="GND30" library="SparkFun" deviceset="GND" device=""/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M04" device="SCREW"/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="IC2" library="burr-brown" deviceset="REG1118" device=""/>
-<part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value=".1uF"/>
-<part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value=".1uF"/>
-<part name="C9" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value=".1uF"/>
-<part name="C10" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value=".1uF"/>
-<part name="C11" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value=".1uF"/>
-<part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND29" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5789,16 +5690,6 @@ with Current Source and Sink Capability</description>
 <instance part="GND30" gate="1" x="15.24" y="-35.56"/>
 <instance part="JP4" gate="G$1" x="129.54" y="10.16" rot="R270"/>
 <instance part="GND3" gate="1" x="127" y="2.54"/>
-<instance part="GND17" gate="1" x="170.18" y="-17.78"/>
-<instance part="IC2" gate="G$1" x="170.18" y="0"/>
-<instance part="C2" gate="G$1" x="185.42" y="-5.08"/>
-<instance part="C4" gate="G$1" x="154.94" y="-5.08"/>
-<instance part="C9" gate="G$1" x="127" y="-2.54" rot="R90"/>
-<instance part="C10" gate="G$1" x="129.54" y="-5.08" rot="R90"/>
-<instance part="C11" gate="G$1" x="132.08" y="-7.62" rot="R90"/>
-<instance part="GND22" gate="1" x="119.38" y="-2.54" rot="R270"/>
-<instance part="GND24" gate="1" x="121.92" y="-5.08" rot="R270"/>
-<instance part="GND29" gate="1" x="124.46" y="-7.62" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -5896,30 +5787,6 @@ with Current Source and Sink Capability</description>
 <pinref part="JP4" gate="G$1" pin="1"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
-<segment>
-<pinref part="IC2" gate="G$1" pin="GND"/>
-<pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="170.18" y1="-15.24" x2="170.18" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="154.94" y1="-7.62" x2="154.94" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="-12.7" x2="170.18" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="185.42" y1="-7.62" x2="185.42" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="-12.7" x2="170.18" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="170.18" y="-12.7"/>
-</segment>
-<segment>
-<pinref part="C9" gate="G$1" pin="1"/>
-<pinref part="GND22" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C10" gate="G$1" pin="1"/>
-<pinref part="GND24" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C11" gate="G$1" pin="1"/>
-<pinref part="GND29" gate="1" pin="GND"/>
-</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -5939,9 +5806,8 @@ with Current Source and Sink Capability</description>
 </segment>
 <segment>
 <pinref part="JP4" gate="G$1" pin="3"/>
-<wire x1="132.08" y1="5.08" x2="132.08" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="5.08" x2="132.08" y2="-10.16" width="0.1524" layer="91"/>
 <label x="132.08" y="-5.08" size="1.778" layer="95" rot="R270"/>
-<pinref part="C10" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -5957,17 +5823,8 @@ with Current Source and Sink Capability</description>
 </segment>
 <segment>
 <pinref part="JP4" gate="G$1" pin="4"/>
-<wire x1="134.62" y1="5.08" x2="134.62" y2="-7.62" width="0.1524" layer="91"/>
-<label x="134.62" y="-7.62" size="1.778" layer="95" rot="R270"/>
-<pinref part="C11" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<wire x1="152.4" y1="0" x2="154.94" y2="0" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="VIN"/>
-<label x="152.4" y="0" size="1.778" layer="95"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="0" x2="157.48" y2="0" width="0.1524" layer="91"/>
-<junction x="154.94" y="0"/>
+<wire x1="134.62" y1="5.08" x2="134.62" y2="-17.78" width="0.1524" layer="91"/>
+<label x="134.62" y="-15.24" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="14.8V" class="0">
@@ -6019,7 +5876,6 @@ with Current Source and Sink Capability</description>
 <pinref part="JP4" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="5.08" x2="129.54" y2="-2.54" width="0.1524" layer="91"/>
 <label x="129.54" y="-2.54" size="1.778" layer="95" rot="R270"/>
-<pinref part="C9" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="DC_1" class="0">
@@ -6089,16 +5945,6 @@ with Current Source and Sink Capability</description>
 <wire x1="15.24" y1="-22.86" x2="15.24" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="LED5" gate="G$1" pin="A"/>
-</segment>
-</net>
-<net name="+3.3V" class="0">
-<segment>
-<wire x1="182.88" y1="0" x2="185.42" y2="0" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="VOUT"/>
-<label x="182.88" y="0" size="1.778" layer="95"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="0" x2="187.96" y2="0" width="0.1524" layer="91"/>
-<junction x="185.42" y="0"/>
 </segment>
 </net>
 </nets>
@@ -6501,7 +6347,7 @@ with Current Source and Sink Capability</description>
 <pinref part="U2" gate="G$1" pin="DIO12"/>
 </segment>
 </net>
-<net name="+3.3V" class="0">
+<net name="+3V3" class="0">
 <segment>
 <wire x1="27.94" y1="25.4" x2="2.54" y2="25.4" width="0.1524" layer="91"/>
 <label x="7.62" y="25.4" size="1.778" layer="95"/>
