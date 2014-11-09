@@ -3516,71 +3516,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="Lib_TH">
-<packages>
-<package name="H_MNTHOLE_#4">
-<circle x="0" y="0" radius="5.461" width="0.127" layer="21"/>
-<pad name="1" x="0" y="0" drill="2.9464"/>
-<text x="-3.81" y="6.35" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.81" y="-7.62" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="H_MNTHOLE_#6">
-<circle x="0" y="0" radius="6.604" width="0.127" layer="21"/>
-<pad name="1" x="0" y="0" drill="3.556"/>
-<text x="-3.81" y="7.62" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.81" y="-8.89" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="H_MNTHOLE_#8">
-<circle x="0" y="0" radius="7.874" width="0.127" layer="21"/>
-<pad name="1" x="0" y="0" drill="4.2164"/>
-<text x="-3.81" y="8.89" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.81" y="-10.16" size="1.27" layer="25">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="MNTHOLE">
-<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<circle x="0" y="0" radius="2.54" width="2.54" layer="94"/>
-<text x="-5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="0" y="0" visible="off" length="point" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="H_MNTHOLE" prefix="H" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="MNTHOLE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="_#4" package="H_MNTHOLE_#4">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_#6" package="H_MNTHOLE_#6">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_#8" package="H_MNTHOLE_#8">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun">
 <packages>
 <package name="XBEE-1">
@@ -3985,43 +3920,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-0.889" y="1.397" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.016" y="-1.778" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
-<package name="LED-1206-BOTTOM">
-<wire x1="-2" y1="0.4" x2="-2" y2="-0.4" width="0.127" layer="49"/>
-<wire x1="-2.4" y1="0" x2="-1.6" y2="0" width="0.127" layer="49"/>
-<wire x1="1.6" y1="0" x2="2.4" y2="0" width="0.127" layer="49"/>
-<wire x1="-1.27" y1="0" x2="-0.381" y2="0" width="0.127" layer="49"/>
-<wire x1="-0.381" y1="0" x2="-0.381" y2="0.635" width="0.127" layer="49"/>
-<wire x1="-0.381" y1="0.635" x2="0.254" y2="0" width="0.127" layer="49"/>
-<wire x1="0.254" y1="0" x2="-0.381" y2="-0.635" width="0.127" layer="49"/>
-<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0" width="0.127" layer="49"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="0.635" width="0.127" layer="49"/>
-<wire x1="0.254" y1="0" x2="0.254" y2="-0.635" width="0.127" layer="49"/>
-<wire x1="0.254" y1="0" x2="1.27" y2="0" width="0.127" layer="49"/>
-<rectangle x1="-0.75" y1="-0.75" x2="0.75" y2="0.75" layer="51"/>
-<smd name="A" x="-1.8" y="0" dx="1.5" dy="1.6" layer="1"/>
-<smd name="C" x="1.8" y="0" dx="1.5" dy="1.6" layer="1"/>
-<hole x="0" y="0" drill="2.3"/>
-<polygon width="0" layer="51">
-<vertex x="1.1" y="-0.5"/>
-<vertex x="1.1" y="0.5"/>
-<vertex x="1.6" y="0.5"/>
-<vertex x="1.6" y="0.25" curve="90"/>
-<vertex x="1.4" y="0.05"/>
-<vertex x="1.4" y="-0.05" curve="90"/>
-<vertex x="1.6" y="-0.25"/>
-<vertex x="1.6" y="-0.5"/>
-</polygon>
-<polygon width="0" layer="51">
-<vertex x="-1.1" y="0.5"/>
-<vertex x="-1.1" y="-0.5"/>
-<vertex x="-1.6" y="-0.5"/>
-<vertex x="-1.6" y="-0.25" curve="90"/>
-<vertex x="-1.4" y="-0.05"/>
-<vertex x="-1.4" y="0.05" curve="90"/>
-<vertex x="-1.6" y="0.25"/>
-<vertex x="-1.6" y="0.5"/>
-</polygon>
-</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -4050,66 +3948,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LED-GREEN" prefix="D" uservalue="yes">
-<description>&lt;B&gt;Various green LEDs&lt;br&gt;&lt;br&gt;&lt;/B&gt;
-Green LEDs used in SFE Production&lt;br&gt;&lt;br&gt;
-0603- DIO-00821&lt;br&gt;
-LARGE- DIO-00862&lt;br&gt;
-LILYPAD- DIO-09910&lt;br&gt;</description>
-<gates>
-<gate name="G$1" symbol="LED" x="0" y="0"/>
-</gates>
-<devices>
-<device name="0603" package="LED-0603">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-00821" constant="no"/>
-<attribute name="VALUE" value="GREEN" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="LILYPAD" package="LED-1206">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-09910"/>
-<attribute name="VALUE" value="GREEN" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="LARGE" package="LED-1206">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-00862" constant="no"/>
-<attribute name="VALUE" value="GREEN" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="1206-BOTTOM" package="LED-1206-BOTTOM">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-11076" constant="no"/>
-<attribute name="VALUE" value="Green" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LED-RED" prefix="D" uservalue="yes">
 <description>Assorted Red LEDs&lt;br&gt;
 LilyPad 1206- DIO-09912&lt;br&gt;
@@ -5556,6 +5394,44 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Electromechanical">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find anything that moves- switches, relays, buttons, potentiometers. Also, anything that goes on a board but isn't electrical in nature- screws, standoffs, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="STANDOFF-ELECTRICAL">
+<pad name="P1" x="0" y="0" drill="3.2" diameter="6.35"/>
+</package>
+</packages>
+<symbols>
+<symbol name="STANDOFF_ELECTRICAL">
+<pin name="P$1" x="7.62" y="0" visible="off" length="short" rot="R180"/>
+<circle x="0" y="0" radius="5.08" width="0.254" layer="94"/>
+<text x="-2.54" y="5.842" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="STANDOFF_ELECTRICAL" prefix="S">
+<description>A standoff intended to be an electrically connected point.&lt;br&gt;
+Pad size and stop size allow for a #4 Phillips pan screw head to make a solid connection to the board.</description>
+<gates>
+<gate name="G$1" symbol="STANDOFF_ELECTRICAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="STANDOFF-ELECTRICAL">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5579,21 +5455,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="R11" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="120 Ohm"/>
 <part name="C12" library="SparkFun-Capacitors" deviceset="CAP" device="1206" value=".1uF"/>
-<part name="H1" library="Lib_TH" deviceset="H_MNTHOLE" device="_#4"/>
-<part name="H2" library="Lib_TH" deviceset="H_MNTHOLE" device="_#4"/>
-<part name="H3" library="Lib_TH" deviceset="H_MNTHOLE" device="_#4"/>
-<part name="H4" library="Lib_TH" deviceset="H_MNTHOLE" device="_#4"/>
-<part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R12" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1k"/>
-<part name="LED1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
 <part name="GND28" library="SparkFun" deviceset="GND" device=""/>
-<part name="LED2" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
-<part name="LED3" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
-<part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1k"/>
-<part name="R14" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1k"/>
 <part name="U2" library="SparkFun" deviceset="XBEE-1" device="B3"/>
 <part name="JP7" library="SparkFun-Connectors" deviceset="M03" device="POLAR"/>
 <part name="JP8" library="SparkFun-Connectors" deviceset="M02" device="3.5MM" value="M023.5MM"/>
@@ -5644,6 +5506,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND30" library="SparkFun" deviceset="GND" device=""/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M04" device="SCREW"/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="S1" library="SparkFun-Electromechanical" deviceset="STANDOFF_ELECTRICAL" device=""/>
+<part name="S2" library="SparkFun-Electromechanical" deviceset="STANDOFF_ELECTRICAL" device=""/>
+<part name="S3" library="SparkFun-Electromechanical" deviceset="STANDOFF_ELECTRICAL" device=""/>
+<part name="S4" library="SparkFun-Electromechanical" deviceset="STANDOFF_ELECTRICAL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5651,14 +5517,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <plain>
 </plain>
 <instances>
-<instance part="H1" gate="G$1" x="25.4" y="38.1"/>
-<instance part="H2" gate="G$1" x="35.56" y="38.1"/>
-<instance part="H3" gate="G$1" x="45.72" y="38.1"/>
-<instance part="H4" gate="G$1" x="55.88" y="38.1"/>
-<instance part="GND11" gate="1" x="25.4" y="30.48"/>
-<instance part="GND12" gate="1" x="35.56" y="30.48"/>
-<instance part="GND13" gate="1" x="45.72" y="30.48"/>
-<instance part="GND14" gate="1" x="55.88" y="30.48"/>
 <instance part="JP7" gate="G$1" x="190.5" y="50.8" rot="R270"/>
 <instance part="JP8" gate="G$1" x="203.2" y="50.8" rot="R270"/>
 <instance part="JP9" gate="G$1" x="93.98" y="50.8" rot="R270"/>
@@ -5690,31 +5548,15 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="GND30" gate="1" x="15.24" y="-35.56"/>
 <instance part="JP4" gate="G$1" x="129.54" y="10.16" rot="R270"/>
 <instance part="GND3" gate="1" x="127" y="2.54"/>
+<instance part="S1" gate="G$1" x="43.18" y="73.66" rot="R270"/>
+<instance part="S2" gate="G$1" x="55.88" y="73.66" rot="R270"/>
+<instance part="S3" gate="G$1" x="68.58" y="73.66" rot="R270"/>
+<instance part="S4" gate="G$1" x="81.28" y="73.66" rot="R270"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
-<segment>
-<pinref part="H1" gate="G$1" pin="1"/>
-<pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="25.4" y1="33.02" x2="25.4" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="H2" gate="G$1" pin="1"/>
-<pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="35.56" y1="33.02" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="H3" gate="G$1" pin="1"/>
-<pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="45.72" y1="33.02" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="H4" gate="G$1" pin="1"/>
-<pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="55.88" y1="33.02" x2="55.88" y2="38.1" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="JP9" gate="G$1" pin="1"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -6197,13 +6039,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <plain>
 </plain>
 <instances>
-<instance part="R12" gate="G$1" x="25.4" y="63.5" rot="R90"/>
-<instance part="LED1" gate="G$1" x="25.4" y="53.34"/>
 <instance part="GND28" gate="1" x="25.4" y="43.18"/>
-<instance part="LED2" gate="G$1" x="5.08" y="53.34"/>
-<instance part="LED3" gate="G$1" x="15.24" y="53.34"/>
-<instance part="R13" gate="G$1" x="5.08" y="63.5" rot="R270"/>
-<instance part="R14" gate="G$1" x="15.24" y="63.5" rot="R270"/>
 <instance part="U2" gate="G$1" x="48.26" y="15.24"/>
 </instances>
 <busses>
@@ -6212,7 +6048,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <net name="GND" class="0">
 <segment>
 <wire x1="25.4" y1="48.26" x2="25.4" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="GND28" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -6224,22 +6059,16 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <net name="N$38" class="0">
 <segment>
 <wire x1="25.4" y1="55.88" x2="25.4" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="R12" gate="G$1" pin="1"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <wire x1="5.08" y1="58.42" x2="5.08" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<pinref part="R13" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <wire x1="15.24" y1="58.42" x2="15.24" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<pinref part="R14" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="DIO4" class="0">
@@ -6355,17 +6184,14 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </segment>
 <segment>
 <wire x1="5.08" y1="68.58" x2="5.08" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="R13" gate="G$1" pin="1"/>
 <label x="5.08" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="25.4" y1="71.12" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="R12" gate="G$1" pin="2"/>
 <label x="25.4" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="15.24" y1="68.58" x2="15.24" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="R14" gate="G$1" pin="1"/>
 <label x="15.24" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -6384,7 +6210,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </segment>
 <segment>
 <wire x1="5.08" y1="48.26" x2="5.08" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="LED2" gate="G$1" pin="C"/>
 <label x="5.08" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -6396,7 +6221,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </segment>
 <segment>
 <wire x1="15.24" y1="48.26" x2="15.24" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
 <label x="15.24" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -6683,10 +6507,6 @@ gyro and accel/mag I2C addresses:</text>
 <approved hash="202,1,58.42,-22.86,U1,2A3,,,,"/>
 <approved hash="209,3,68.58,15.24,RTS,,,,,"/>
 <approved hash="209,3,27.94,15.24,XRESET,,,,,"/>
-<approved hash="113,1,24.4687,39.9203,H1,,,,,"/>
-<approved hash="113,1,34.6287,39.9203,H2,,,,,"/>
-<approved hash="113,1,44.7887,39.9203,H3,,,,,"/>
-<approved hash="113,1,54.9487,39.9203,H4,,,,,"/>
 </errors>
 </schematic>
 </drawing>
