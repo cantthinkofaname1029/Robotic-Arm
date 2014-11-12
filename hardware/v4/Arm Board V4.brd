@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -47,10 +47,10 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
@@ -165,7 +165,7 @@ Eric Mullis
 </text>
 <wire x1="0" y1="50.8" x2="127" y2="50.8" width="0" layer="20"/>
 <wire x1="0" y1="0" x2="127" y2="0" width="0" layer="20"/>
-<text x="67.945" y="21.9075" size="0.8128" layer="25" font="vector" rot="SR0" align="center">+ 12V -</text>
+<text x="67.945" y="19.05" size="0.8128" layer="25" font="vector" rot="SR0" align="center">+ 12V -</text>
 <text x="67.6275" y="14.9225" size="0.6096" layer="25" font="vector" align="top-center">AX-12</text>
 <text x="73.4695" y="4.28625" size="0.6096" layer="25" font="vector" rot="SR270" align="top-center">MX-64</text>
 <text x="53.5305" y="4.28625" size="0.6096" layer="25" font="vector" rot="R90" align="top-center">MX-64</text>
@@ -233,7 +233,7 @@ Eric Mullis
 <wire x1="52.3875" y1="49.911" x2="52.7685" y2="49.53" width="0.254" layer="21"/>
 <wire x1="52.3875" y1="49.149" x2="52.3875" y2="49.911" width="0.254" layer="21"/>
 <wire x1="52.7685" y1="49.53" x2="52.3875" y2="49.149" width="0.254" layer="21"/>
-<text x="59.055" y="21.9075" size="0.8128" layer="25" font="vector" rot="SR0" align="center">+ 12V -</text>
+<text x="59.055" y="19.05" size="0.8128" layer="25" font="vector" rot="SR0" align="center">+ 12V -</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
@@ -284,26 +284,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 &lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="SCREWTERMINAL-3.5MM-2">
-<wire x1="-1.75" y1="3.4" x2="5.25" y2="3.4" width="0.2032" layer="21"/>
-<wire x1="5.25" y1="3.4" x2="5.25" y2="-2.8" width="0.2032" layer="21"/>
-<wire x1="5.25" y1="-2.8" x2="5.25" y2="-3.6" width="0.2032" layer="21"/>
-<wire x1="5.25" y1="-3.6" x2="-1.75" y2="-3.6" width="0.2032" layer="21"/>
-<wire x1="-1.75" y1="-3.6" x2="-1.75" y2="-2.8" width="0.2032" layer="21"/>
-<wire x1="-1.75" y1="-2.8" x2="-1.75" y2="3.4" width="0.2032" layer="21"/>
-<wire x1="5.25" y1="-2.8" x2="-1.75" y2="-2.8" width="0.2032" layer="21"/>
-<wire x1="-1.75" y1="-1.35" x2="-2.15" y2="-1.35" width="0.2032" layer="51"/>
-<wire x1="-2.15" y1="-1.35" x2="-2.15" y2="-2.35" width="0.2032" layer="51"/>
-<wire x1="-2.15" y1="-2.35" x2="-1.75" y2="-2.35" width="0.2032" layer="51"/>
-<wire x1="5.25" y1="3.15" x2="5.65" y2="3.15" width="0.2032" layer="51"/>
-<wire x1="5.65" y1="3.15" x2="5.65" y2="2.15" width="0.2032" layer="51"/>
-<wire x1="5.65" y1="2.15" x2="5.25" y2="2.15" width="0.2032" layer="51"/>
-<circle x="2" y="3" radius="0.2828" width="0.127" layer="51"/>
-<pad name="1" x="0" y="0" drill="1.2" diameter="2.032" shape="square"/>
-<pad name="2" x="3.5" y="0" drill="1.2" diameter="2.032"/>
-<text x="-1.27" y="2.54" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.27" y="1.27" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
 <package name="RJ45-8">
 <wire x1="-7.62" y1="10" x2="7.62" y2="10" width="0.2032" layer="21"/>
 <wire x1="-7.62" y1="-3" x2="-7.62" y2="10" width="0.2032" layer="21"/>
@@ -323,39 +303,43 @@ We've spent an enormous amount of time creating and checking these footprints an
 <hole x="-5.715" y="0" drill="3.2"/>
 <hole x="5.715" y="0" drill="3.2"/>
 </package>
-<package name="MOLEX-1X3">
-<wire x1="-1.27" y1="3.048" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="6.35" y1="3.048" x2="6.35" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="6.35" y1="3.048" x2="-1.27" y2="3.048" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-2.54" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-2.54" x2="0" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="0" y1="-1.27" x2="5.08" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-1.27" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" shape="square"/>
-<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796"/>
-<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796"/>
+<package name="1X03">
+<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 </package>
-<package name="SCREWTERMINAL-3.5MM-3">
-<wire x1="-2.3" y1="3.4" x2="9.3" y2="3.4" width="0.2032" layer="21"/>
-<wire x1="9.3" y1="3.4" x2="9.3" y2="-2.8" width="0.2032" layer="21"/>
-<wire x1="9.3" y1="-2.8" x2="9.3" y2="-3.6" width="0.2032" layer="21"/>
-<wire x1="9.3" y1="-3.6" x2="-2.3" y2="-3.6" width="0.2032" layer="21"/>
-<wire x1="-2.3" y1="-3.6" x2="-2.3" y2="-2.8" width="0.2032" layer="21"/>
-<wire x1="-2.3" y1="-2.8" x2="-2.3" y2="3.4" width="0.2032" layer="21"/>
-<wire x1="9.3" y1="-2.8" x2="-2.3" y2="-2.8" width="0.2032" layer="21"/>
-<wire x1="-2.3" y1="-1.35" x2="-2.7" y2="-1.35" width="0.2032" layer="51"/>
-<wire x1="-2.7" y1="-1.35" x2="-2.7" y2="-2.35" width="0.2032" layer="51"/>
-<wire x1="-2.7" y1="-2.35" x2="-2.3" y2="-2.35" width="0.2032" layer="51"/>
-<wire x1="9.3" y1="3.15" x2="9.7" y2="3.15" width="0.2032" layer="51"/>
-<wire x1="9.7" y1="3.15" x2="9.7" y2="2.15" width="0.2032" layer="51"/>
-<wire x1="9.7" y1="2.15" x2="9.3" y2="2.15" width="0.2032" layer="51"/>
-<pad name="1" x="0" y="0" drill="1.2" diameter="2.413" shape="square"/>
-<pad name="2" x="3.5" y="0" drill="1.2" diameter="2.413"/>
-<pad name="3" x="7" y="0" drill="1.2" diameter="2.413"/>
-<text x="-1.27" y="2.54" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.27" y="1.27" size="0.4064" layer="27">&gt;VALUE</text>
+<package name="1X02_XTRA_BIG">
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="2.54" width="0.127" layer="21"/>
+<wire x1="5.08" y1="2.54" x2="-5.08" y2="2.54" width="0.127" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="2.0574" diameter="3.556"/>
+<pad name="2" x="2.54" y="0" drill="2.0574" diameter="3.556"/>
 </package>
 </packages>
 </library>
@@ -1147,6 +1131,40 @@ We've spent an enormous amount of time creating and checking these footprints an
 </package>
 </packages>
 </library>
+<library name="MRDT-2015-PowerBoard">
+<packages>
+<package name="691322110003">
+<pad name="L" x="-3.5" y="0" drill="1.4"/>
+<pad name="R" x="3.5" y="0" drill="1.4"/>
+<wire x1="-5.8" y1="-4.4" x2="-5.8" y2="2.8" width="0.127" layer="21"/>
+<wire x1="-5.8" y1="2.8" x2="5.8" y2="2.8" width="0.127" layer="21"/>
+<wire x1="5.8" y1="2.8" x2="5.8" y2="-4.4" width="0.127" layer="21"/>
+<wire x1="5.8" y1="-4.4" x2="-5.8" y2="-4.4" width="0.127" layer="21"/>
+<text x="0" y="2.9" size="1.27" layer="21" align="bottom-center">&gt;NAME</text>
+<text x="3.58" y="-3.9" size="1.27" layer="21" align="bottom-center">R</text>
+<text x="-3.58" y="-3.9" size="1.27" layer="21" align="bottom-center">L</text>
+<pad name="C" x="0" y="0" drill="1.4"/>
+<text x="0" y="-3.9" size="1.27" layer="21" align="bottom-center">C</text>
+<polygon width="0" layer="39">
+<vertex x="-5.8" y="4.4"/>
+<vertex x="-5.8" y="-6"/>
+<vertex x="5.8" y="-6"/>
+<vertex x="5.8" y="4.4"/>
+</polygon>
+</package>
+<package name="691321100002">
+<pad name="L" x="-1.79" y="0" drill="1.4"/>
+<pad name="R" x="1.79" y="0" drill="1.4"/>
+<wire x1="-4.1" y1="-2.8" x2="-4.1" y2="4.4" width="0.127" layer="21"/>
+<wire x1="-4.1" y1="4.4" x2="4.1" y2="4.4" width="0.127" layer="21"/>
+<wire x1="4.1" y1="4.4" x2="4.1" y2="-2.8" width="0.127" layer="21"/>
+<wire x1="4.1" y1="-2.8" x2="-4.1" y2="-2.8" width="0.127" layer="21"/>
+<text x="-0.1" y="4.6" size="1.27" layer="21" align="bottom-center">&gt;NAME</text>
+<text x="1.79" y="-2.6" size="1.27" layer="21" align="bottom-center">R</text>
+<text x="-1.79" y="-2.6" size="1.27" layer="21" align="bottom-center">L</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1246,6 +1264,9 @@ Please make sure your boards conform to these design rules.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -1357,12 +1378,26 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R13" library="SparkFun-Passives" package="1206" value="1k" x="121.6025" y="26.924" rot="R270"/>
 <element name="R14" library="SparkFun-Passives" package="1206" value="1k" x="119.38" y="26.924" rot="R270"/>
 <element name="U2" library="SparkFun" package="XBEE-SMD" value="XBEE-1B3" x="113.03" y="51.1175" rot="R180"/>
-<element name="JP7" library="SparkFun-Connectors" package="MOLEX-1X3" value="" x="56.8325" y="10.95375"/>
-<element name="JP8" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-2" value="M023.5MM" x="57.4675" y="26.3525"/>
-<element name="JP9" library="SparkFun-Connectors" package="MOLEX-1X3" value="" x="63.27775" y="6.82625" rot="R270"/>
-<element name="JP10" library="SparkFun-Connectors" package="MOLEX-1X3" value="" x="57.24525" y="6.82625" rot="R270"/>
-<element name="JP11" library="SparkFun-Connectors" package="MOLEX-1X3" value="" x="69.31025" y="6.82625" rot="R270"/>
-<element name="JP12" library="SparkFun-Connectors" package="MOLEX-1X3" value="" x="65.0875" y="10.95375"/>
+<element name="JP7" library="SparkFun-Connectors" package="1X03" value="" x="56.8325" y="10.95375" smashed="yes">
+<attribute name="NAME" x="55.4863" y="12.78255" size="1.27" layer="25" ratio="10" display="off"/>
+<attribute name="VALUE" x="55.5625" y="7.77875" size="1.27" layer="27"/>
+</element>
+<element name="JP9" library="SparkFun-Connectors" package="1X03" value="" x="63.27775" y="6.82625" smashed="yes" rot="R270">
+<attribute name="NAME" x="65.10655" y="8.17245" size="1.27" layer="25" ratio="10" rot="R270" display="off"/>
+<attribute name="VALUE" x="60.10275" y="8.09625" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="JP10" library="SparkFun-Connectors" package="1X03" value="" x="57.24525" y="6.82625" smashed="yes" rot="R270">
+<attribute name="NAME" x="59.07405" y="8.17245" size="1.27" layer="25" ratio="10" rot="R270" display="off"/>
+<attribute name="VALUE" x="54.07025" y="8.09625" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="JP11" library="SparkFun-Connectors" package="1X03" value="" x="69.31025" y="6.82625" smashed="yes" rot="R270">
+<attribute name="NAME" x="71.13905" y="8.17245" size="1.27" layer="25" ratio="10" rot="R270" display="off"/>
+<attribute name="VALUE" x="66.13525" y="8.09625" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="JP12" library="SparkFun-Connectors" package="1X03" value="" x="65.0875" y="10.95375" smashed="yes">
+<attribute name="NAME" x="63.7413" y="12.78255" size="1.27" layer="25" ratio="10" display="off"/>
+<attribute name="VALUE" x="63.8175" y="7.77875" size="1.27" layer="27"/>
+</element>
 <element name="U$2" library="MRDT-2014-All" package="R_PDSS-T7" value="Q_PTN78020" x="92.71" y="11.43" smashed="yes" rot="R180">
 <attribute name="NAME" x="111.71" y="-0.57" size="1.27" layer="25" rot="R180"/>
 </element>
@@ -1378,7 +1413,6 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C1" library="SparkFun-Capacitors" package="1206" value=".1uF" x="113.665" y="17.4625" rot="R270"/>
 <element name="C3" library="SparkFun-Passives" package="PANASONIC_C" value="" x="75.8825" y="26.67"/>
 <element name="U$4" library="MAX3077" package="MAX3070E" value="MAX3077" x="79.375" y="44.45" rot="R270"/>
-<element name="JP3" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-2" value="M023.5MM" x="65.7225" y="26.3525"/>
 <element name="U3" library="SparkFun-DigitalIC" package="LGA-24" value="LSM9DS0" x="25.4" y="16.51" rot="R180"/>
 <element name="C5" library="SparkFun-Capacitors" package="1206" value=".22uF" x="25.4" y="21.844"/>
 <element name="C6" library="SparkFun-Capacitors" package="1206" value="4.7uF" x="30.48" y="16.51" rot="R270"/>
@@ -1400,7 +1434,14 @@ Please make sure your boards conform to these design rules.</description>
 <element name="S2" library="SparkFun-Electromechanical" package="STANDOFF-ELECTRICAL" value="STANDOFF_ELECTRICAL" x="10.16" y="45.72"/>
 <element name="S3" library="SparkFun-Electromechanical" package="STANDOFF-ELECTRICAL" value="STANDOFF_ELECTRICAL" x="116.84" y="5.08"/>
 <element name="S4" library="SparkFun-Electromechanical" package="STANDOFF-ELECTRICAL" value="STANDOFF_ELECTRICAL" x="116.84" y="45.72"/>
-<element name="JP1" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-3" value="" x="66.9925" y="35.56" rot="R180"/>
+<element name="U$5" library="MRDT-2015-PowerBoard" package="691322110003" value="691321100003" x="63.5" y="36.195" smashed="yes"/>
+<element name="U$6" library="MRDT-2015-PowerBoard" package="691321100002" value="H_WR-TBL_321*0002VERT" x="59.055" y="22.86" smashed="yes">
+<attribute name="DIGIKEY_PN" value="732-2763-ND" x="59.055" y="22.86" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$7" library="MRDT-2015-PowerBoard" package="691321100002" value="H_WR-TBL_321*0002VERT" x="67.945" y="22.86" smashed="yes">
+<attribute name="DIGIKEY_PN" value="732-2763-ND" x="67.945" y="22.86" size="1.778" layer="27" display="off"/>
+</element>
+<element name="JP1" library="SparkFun-Connectors" package="1X02_XTRA_BIG" value="M02PTH4" x="-10.16" y="-6.35"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1419,7 +1460,6 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="JP10" pad="1"/>
 <contactref element="JP11" pad="1"/>
 <contactref element="JP12" pad="1"/>
-<contactref element="JP8" pad="2"/>
 <contactref element="JP7" pad="1"/>
 <contactref element="U$2" pad="1"/>
 <contactref element="U$2" pad="7"/>
@@ -1449,7 +1489,6 @@ Please make sure your boards conform to these design rules.</description>
 <via x="93.0275" y="25.0825" extent="1-16" drill="0.6"/>
 <via x="74.73" y="26.47" extent="1-16" drill="0.6"/>
 <wire x1="122.53" y1="49.1175" x2="122.8725" y2="49.1175" width="0.4064" layer="1"/>
-<contactref element="JP3" pad="2"/>
 <contactref element="U3" pad="2"/>
 <contactref element="U3" pad="3"/>
 <contactref element="U3" pad="4"/>
@@ -1503,7 +1542,6 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="13.6525" y="42.2275"/>
 <vertex x="13.6525" y="49.2125"/>
 </polygon>
-<contactref element="JP1" pad="1"/>
 <polygon width="0.254" layer="1" thermals="no">
 <vertex x="73.9775" y="0"/>
 <vertex x="73.9775" y="3.175"/>
@@ -1533,6 +1571,9 @@ Please make sure your boards conform to these design rules.</description>
 <via x="20.6375" y="15.367" extent="1-16" drill="0.3302"/>
 <wire x1="20.6375" y1="15.367" x2="20.6375" y2="15.11" width="0.3048" layer="1"/>
 <wire x1="74.0825" y1="26.47" x2="74.73" y2="26.47" width="0.6096" layer="1"/>
+<contactref element="U$5" pad="C"/>
+<contactref element="U$6" pad="R"/>
+<contactref element="U$7" pad="R"/>
 </signal>
 <signal name="+3V3">
 <contactref element="U$1" pad="3.3V"/>
@@ -1774,31 +1815,26 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="+12V">
 <contactref element="JP12" pad="2"/>
-<contactref element="JP8" pad="1"/>
-<contactref element="JP3" pad="1"/>
 <polygon width="0.254" layer="1" thermals="no" rank="2">
 <vertex x="61.595" y="42.8625"/>
 <vertex x="50.4825" y="42.8625"/>
-<vertex x="50.4825" y="21.9075"/>
-<vertex x="71.12" y="21.9075"/>
+<vertex x="50.4825" y="20.6375"/>
+<vertex x="71.12" y="20.6375"/>
 <vertex x="71.12" y="29.845"/>
 <vertex x="61.595" y="29.845"/>
 </polygon>
 <polygon width="0.1778" layer="16" thermals="no">
 <vertex x="66.675" y="9.2075"/>
 <vertex x="68.58" y="9.2075"/>
-<vertex x="68.58" y="23.8125" curve="90"/>
-<vertex x="68.2625" y="24.13"/>
-<vertex x="66.9925" y="24.13" curve="-90"/>
-<vertex x="66.675" y="24.4475"/>
-<vertex x="66.675" y="27.6225"/>
-<vertex x="64.77" y="27.6225"/>
-<vertex x="64.77" y="21.9075" curve="90"/>
-<vertex x="65.0875" y="21.59"/>
-<vertex x="66.3575" y="21.59" curve="-90"/>
-<vertex x="66.675" y="21.2725"/>
+<vertex x="68.58" y="24.4475"/>
+<vertex x="64.77" y="24.4475"/>
+<vertex x="64.77" y="20.955"/>
+<vertex x="66.3575" y="20.955" curve="-90"/>
+<vertex x="66.675" y="20.6375"/>
 </polygon>
-<contactref element="JP1" pad="3"/>
+<contactref element="U$5" pad="L"/>
+<contactref element="U$6" pad="L"/>
+<contactref element="U$7" pad="L"/>
 </signal>
 <signal name="14.8V">
 <contactref element="JP9" pad="2"/>
@@ -1807,14 +1843,14 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U$2" pad="6"/>
 <contactref element="C3" pad="+"/>
 <polygon width="0.254" layer="1" thermals="no" rank="3">
-<vertex x="50.8" y="21.59"/>
+<vertex x="50.8" y="20.32"/>
 <vertex x="50.8" y="0"/>
 <vertex x="73.66" y="0"/>
 <vertex x="73.66" y="3.4925"/>
 <vertex x="82.55" y="3.4925"/>
 <vertex x="82.55" y="23.1775"/>
 <vertex x="71.4375" y="23.1775"/>
-<vertex x="71.4375" y="21.59"/>
+<vertex x="71.4375" y="20.32"/>
 </polygon>
 <polygon width="0.254" layer="1" thermals="no">
 <vertex x="73.66" y="22.5425"/>
@@ -1874,12 +1910,12 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="74.6125" y="42.8625"/>
 </polygon>
 <polygon width="0.3048" layer="1" thermals="no">
-<vertex x="65.0875" y="37.0205"/>
-<vertex x="62.0395" y="37.0205"/>
-<vertex x="62.0395" y="34.0995"/>
-<vertex x="65.0875" y="34.0995"/>
+<vertex x="68.8975" y="38.2905"/>
+<vertex x="64.5795" y="38.2905"/>
+<vertex x="64.5795" y="34.0995"/>
+<vertex x="68.8975" y="34.0995"/>
 </polygon>
-<contactref element="JP1" pad="2"/>
+<contactref element="U$5" pad="R"/>
 </signal>
 <signal name="RST">
 <contactref element="U$1" pad="RST"/>
@@ -2378,17 +2414,13 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,16,39a2c7d6c09f3eeb"/>
 <approved hash="19,1,c7f5998f9891c6eb"/>
 <approved hash="19,1,b8ca4cfe4c0bb83f"/>
-<approved hash="19,1,3e0f93977810afcd"/>
-<approved hash="19,16,f9b0f744ea0fe4fb"/>
-<approved hash="19,16,69356b4176067472"/>
-<approved hash="19,16,49b56b41760854fc"/>
-<approved hash="19,16,7929c75dda176463"/>
 <approved hash="19,1,3d1e10ea113f3ccb"/>
 <approved hash="19,1,351e6eea6f3634c2"/>
 <approved hash="19,1,bd9c69a86c11b825"/>
 <approved hash="19,1,be959115e76994e8"/>
 <approved hash="19,1,8b9c9f0dd30dc79c"/>
 <approved hash="19,1,53bdd3e029c1ad7a"/>
+<approved hash="19,1,3e0f93977810afcd"/>
 <approved hash="19,1,4aa3b4bf67fb1d9f"/>
 <approved hash="19,1,b358e92ced01b775"/>
 <approved hash="19,1,704668f86f84773a"/>
@@ -2396,6 +2428,10 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="19,1,0a9860ec639309e7"/>
 <approved hash="19,1,480717f5cf84d067"/>
 <approved hash="19,1,755d23293c9e6aea"/>
+<approved hash="19,16,f9b0f744ea0fe4fb"/>
+<approved hash="19,16,69356b4176067472"/>
+<approved hash="19,16,49b56b41760854fc"/>
+<approved hash="19,16,7929c75dda176463"/>
 </errors>
 </board>
 </drawing>
