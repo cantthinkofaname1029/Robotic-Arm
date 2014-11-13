@@ -4505,6 +4505,9 @@ Part Numbers:&lt;Br&gt;
 <part name="U$7" library="MRDT-2015-PowerBoard" deviceset="H_WR-TBL_32*1*0002" device="VERT"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4541,13 +4544,16 @@ Part Numbers:&lt;Br&gt;
 <instance part="S2" gate="G$1" x="38.1" y="58.42" rot="R270"/>
 <instance part="S3" gate="G$1" x="50.8" y="58.42" rot="R270"/>
 <instance part="S4" gate="G$1" x="63.5" y="58.42" rot="R270"/>
-<instance part="GND11" gate="1" x="43.18" y="45.72"/>
+<instance part="GND11" gate="1" x="38.1" y="48.26"/>
 <instance part="U$5" gate="G$1" x="175.26" y="10.16"/>
 <instance part="GND3" gate="1" x="175.26" y="-5.08"/>
 <instance part="U$6" gate="G$1" x="132.08" y="12.7"/>
 <instance part="U$7" gate="G$1" x="132.08" y="-12.7"/>
 <instance part="GND6" gate="1" x="144.78" y="15.24" rot="R90"/>
 <instance part="GND9" gate="1" x="144.78" y="-10.16" rot="R90"/>
+<instance part="GND12" gate="1" x="25.4" y="48.26"/>
+<instance part="GND13" gate="1" x="50.8" y="48.26"/>
+<instance part="GND14" gate="1" x="63.5" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -4612,26 +4618,6 @@ Part Numbers:&lt;Br&gt;
 <pinref part="GND30" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="S1" gate="G$1" pin="P$1"/>
-<wire x1="25.4" y1="50.8" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="25.4" y1="48.26" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="S2" gate="G$1" pin="P$1"/>
-<wire x1="43.18" y1="48.26" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="50.8" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="S4" gate="G$1" pin="P$1"/>
-<wire x1="63.5" y1="50.8" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="S3" gate="G$1" pin="P$1"/>
-<wire x1="50.8" y1="48.26" x2="43.18" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="50.8" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
-<junction x="38.1" y="48.26"/>
-<junction x="50.8" y="48.26"/>
-<junction x="43.18" y="48.26"/>
-<junction x="25.4" y="48.26"/>
-<junction x="63.5" y="48.26"/>
-</segment>
-<segment>
 <pinref part="U$5" gate="G$1" pin="C"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
@@ -4642,6 +4628,22 @@ Part Numbers:&lt;Br&gt;
 <segment>
 <pinref part="U$7" gate="G$1" pin="R"/>
 <pinref part="GND9" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="S2" gate="G$1" pin="P$1"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="S1" gate="G$1" pin="P$1"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="S3" gate="G$1" pin="P$1"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="S4" gate="G$1" pin="P$1"/>
+<pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+12V" class="0">
