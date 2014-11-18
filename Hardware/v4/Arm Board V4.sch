@@ -3188,6 +3188,26 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 </device>
 </devices>
 </deviceset>
+<deviceset name="1.0UF50V10%(1206)" prefix="C" uservalue="yes">
+<description>CAP-09822</description>
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-09822"/>
+<attribute name="VALUE" value="1.0uF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1">
@@ -6214,6 +6234,10 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND29" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C14" library="SparkFun-Capacitors" deviceset="1.0UF50V10%(1206)" device="" value="1.0uF"/>
+<part name="GND31" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C15" library="SparkFun-Capacitors" deviceset="1.0UF50V10%(1206)" device="" value="1.0uF"/>
+<part name="GND32" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6234,12 +6258,12 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <instance part="U$2" gate="G$1" x="223.52" y="45.72"/>
 <instance part="GND15" gate="1" x="210.82" y="45.72" rot="R270"/>
 <instance part="GND16" gate="1" x="276.86" y="45.72" rot="R90"/>
-<instance part="SUPPLY2" gate="G$1" x="182.88" y="33.02" rot="R90"/>
+<instance part="SUPPLY2" gate="G$1" x="175.26" y="33.02" rot="R90"/>
 <instance part="U1" gate="A" x="76.2" y="-7.62"/>
 <instance part="GND18" gate="1" x="55.88" y="-30.48" rot="R270"/>
 <instance part="R1" gate="G$1" x="243.84" y="15.24" rot="R90"/>
 <instance part="GND19" gate="1" x="243.84" y="5.08"/>
-<instance part="GND21" gate="1" x="271.78" y="20.32"/>
+<instance part="GND21" gate="1" x="271.78" y="22.86"/>
 <instance part="R9" gate="G$1" x="15.24" y="-15.24" rot="R90"/>
 <instance part="LED5" gate="G$1" x="15.24" y="-25.4"/>
 <instance part="GND30" gate="1" x="15.24" y="-35.56"/>
@@ -6267,6 +6291,10 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <instance part="GND22" gate="1" x="195.58" y="22.86"/>
 <instance part="GND24" gate="1" x="205.74" y="22.86"/>
 <instance part="GND29" gate="1" x="215.9" y="22.86"/>
+<instance part="C14" gate="G$1" x="177.8" y="27.94"/>
+<instance part="GND31" gate="1" x="177.8" y="22.86"/>
+<instance part="C15" gate="G$1" x="281.94" y="27.94"/>
+<instance part="GND32" gate="1" x="281.94" y="22.86"/>
 </instances>
 <busses>
 </busses>
@@ -6317,7 +6345,6 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </segment>
 <segment>
 <pinref part="GND21" gate="1" pin="GND"/>
-<wire x1="271.78" y1="22.86" x2="271.78" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="-"/>
 </segment>
 <segment>
@@ -6370,6 +6397,14 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <pinref part="C13" gate="G$1" pin="2"/>
 <pinref part="GND29" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C14" gate="G$1" pin="2"/>
+<pinref part="GND31" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C15" gate="G$1" pin="2"/>
+<pinref part="GND32" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -6413,11 +6448,14 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="VOUT"/>
-<label x="276.86" y="33.02" size="1.778" layer="95" xref="yes"/>
+<label x="287.02" y="33.02" size="1.778" layer="95" xref="yes"/>
 <wire x1="269.24" y1="33.02" x2="271.78" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="+"/>
-<wire x1="271.78" y1="33.02" x2="276.86" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="33.02" x2="281.94" y2="33.02" width="0.1524" layer="91"/>
 <junction x="271.78" y="33.02"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+<wire x1="281.94" y1="33.02" x2="287.02" y2="33.02" width="0.1524" layer="91"/>
+<junction x="281.94" y="33.02"/>
 </segment>
 <segment>
 <wire x1="147.32" y1="43.18" x2="147.32" y2="35.56" width="0.1524" layer="91"/>
@@ -6437,8 +6475,9 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <segment>
 <pinref part="U$2" gate="G$1" pin="VIN"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VIN"/>
-<wire x1="182.88" y1="33.02" x2="185.42" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="33.02" x2="177.8" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="33.02" x2="185.42" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="33.02" x2="195.58" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="33.02" x2="205.74" y2="33.02" width="0.1524" layer="91"/>
@@ -6450,6 +6489,8 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <wire x1="215.9" y1="33.02" x2="218.44" y2="33.02" width="0.1524" layer="91"/>
 <junction x="215.9" y="33.02"/>
 <junction x="185.42" y="33.02"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<junction x="177.8" y="33.02"/>
 </segment>
 <segment>
 <wire x1="15.24" y1="-7.62" x2="15.24" y2="-10.16" width="0.1524" layer="91"/>
