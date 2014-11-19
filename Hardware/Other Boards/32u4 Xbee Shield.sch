@@ -2213,6 +2213,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="U$2" library="SparkFun" deviceset="5V" device=""/>
 <part name="P+6" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="U$12" library="SparkFun" deviceset="5V" device=""/>
+<part name="U$4" library="SparkFun" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2266,6 +2267,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="U$2" gate="G$1" x="139.7" y="66.04"/>
 <instance part="P+6" gate="G$1" x="251.46" y="152.4"/>
 <instance part="U$12" gate="G$1" x="208.28" y="152.4"/>
+<instance part="U$4" gate="G$1" x="5.08" y="15.24" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2351,6 +2353,10 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="R8" gate="G$1" pin="2"/>
 <pinref part="U$2" gate="G$1" pin="5V"/>
 <wire x1="139.7" y1="58.42" x2="139.7" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="VCC"/>
+<pinref part="U$4" gate="G$1" pin="5V"/>
 </segment>
 </net>
 <net name="N$38" class="0">

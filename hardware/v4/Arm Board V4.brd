@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.00625" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7201,7 +7201,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="27.94" y1="16.1925" x2="27.94" y2="15.745" width="0.4064" layer="1"/>
 <contactref element="JP1" pad="4"/>
 <contactref element="C10" pad="-"/>
-<via x="70.485" y="27.94" extent="1-16" drill="1" shape="square"/>
+<via x="70.64375" y="27.94" extent="1-16" drill="1" shape="square"/>
 <contactref element="C1" pad="2"/>
 <contactref element="C3" pad="2"/>
 <contactref element="C11" pad="2"/>
@@ -7214,7 +7214,7 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="114.14125" y="21.74875"/>
 <vertex x="114.3" y="11.1125"/>
 </polygon>
-<wire x1="70.485" y1="27.94" x2="69.39" y2="27.94" width="0.254" layer="1"/>
+<wire x1="70.64375" y1="27.94" x2="69.39" y2="27.94" width="0.254" layer="1"/>
 <contactref element="JP3" pad="4"/>
 <contactref element="JP2" pad="4"/>
 </signal>
@@ -7548,14 +7548,17 @@ Please make sure your boards conform to these design rules.</description>
 </polygon>
 <contactref element="JP12" pad="2"/>
 <contactref element="C10" pad="+"/>
-<via x="74.295" y="27.94" extent="1-16" drill="1" shape="square"/>
-<wire x1="74.295" y1="27.94" x2="74.295" y2="21.59" width="1.4224" layer="16"/>
-<wire x1="74.295" y1="21.59" x2="73.66" y2="20.955" width="1.4224" layer="16"/>
-<wire x1="73.66" y1="20.955" x2="70.165" y2="20.955" width="1.4224" layer="16"/>
-<wire x1="70.165" y1="20.955" x2="70.16" y2="20.95" width="1.4224" layer="16"/>
-<wire x1="75.39" y1="27.94" x2="74.295" y2="27.94" width="1.27" layer="1"/>
 <contactref element="C15" pad="1"/>
-<wire x1="73.79" y1="27.94" x2="74.295" y2="27.94" width="0.4064" layer="16"/>
+<polygon width="0.254" layer="16">
+<vertex x="68.58" y="22.86"/>
+<vertex x="68.58" y="19.05"/>
+<vertex x="75.565" y="19.05"/>
+<vertex x="75.565" y="29.5275"/>
+<vertex x="72.0725" y="29.5275"/>
+<vertex x="72.0725" y="22.86"/>
+</polygon>
+<via x="73.81875" y="27.94" extent="1-16" drill="1" shape="square"/>
+<wire x1="73.81875" y1="27.94" x2="75.39" y2="27.94" width="0.254" layer="1"/>
 </signal>
 <signal name="VIN">
 <contactref element="U$2" pad="2"/>
