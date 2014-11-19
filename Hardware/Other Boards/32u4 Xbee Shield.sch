@@ -2187,9 +2187,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="U2" library="SparkFun" deviceset="XBEE-1" device="B3"/>
 <part name="P+1" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
-<part name="LED4" library="SparkFun" deviceset="LED" device="0603" value="Green"/>
-<part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="1206" value="1k"/>
-<part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="U3" library="SparkFun" deviceset="V_REG_LDO" device="SMD"/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 <part name="C1" library="SparkFun" deviceset="CAP_POL" device="1206" value="10uF"/>
@@ -2235,9 +2232,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="U2" gate="G$1" x="160.02" y="109.22"/>
 <instance part="P+1" gate="G$1" x="137.16" y="121.92"/>
 <instance part="GND3" gate="1" x="137.16" y="91.44"/>
-<instance part="LED4" gate="G$1" x="76.2" y="139.7"/>
-<instance part="R4" gate="G$1" x="76.2" y="149.86" rot="R90"/>
-<instance part="GND4" gate="1" x="76.2" y="129.54"/>
 <instance part="U3" gate="G$1" x="231.14" y="144.78" smashed="yes">
 <attribute name="NAME" x="223.52" y="153.924" size="1.778" layer="95"/>
 </instance>
@@ -2294,11 +2288,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <label x="119.38" y="96.52" size="1.778" layer="95"/>
 <pinref part="U2" gate="G$1" pin="GND"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="76.2" y1="134.62" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="LED4" gate="G$1" pin="C"/>
-<pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
 <wire x1="220.98" y1="144.78" x2="215.9" y2="144.78" width="0.1524" layer="91"/>
@@ -2536,24 +2525,12 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <label x="119.38" y="106.68" size="1.778" layer="95"/>
 <pinref part="U2" gate="G$1" pin="RSSI"/>
 </segment>
-<segment>
-<wire x1="76.2" y1="154.94" x2="76.2" y2="162.56" width="0.1524" layer="91"/>
-<label x="76.2" y="157.48" size="1.778" layer="95" rot="R90"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-</segment>
 </net>
 <net name="DIO12" class="0">
 <segment>
 <wire x1="139.7" y1="111.76" x2="114.3" y2="111.76" width="0.1524" layer="91"/>
 <label x="119.38" y="111.76" size="1.778" layer="95"/>
 <pinref part="U2" gate="G$1" pin="DIO12"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<wire x1="76.2" y1="144.78" x2="76.2" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="LED4" gate="G$1" pin="A"/>
-<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="OUT" class="0">
