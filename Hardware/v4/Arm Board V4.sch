@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -519,23 +519,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <smd name="2" x="0" y="5" dx="3" dy="1" layer="1" rot="R90"/>
 <smd name="3" x="2.54" y="5" dx="3" dy="1" layer="1" rot="R90"/>
 </package>
-<package name="JST-3-PTH">
-<wire x1="-3.95" y1="-1.6" x2="-3.95" y2="6" width="0.2032" layer="21"/>
-<wire x1="-3.95" y1="6" x2="3.95" y2="6" width="0.2032" layer="21"/>
-<wire x1="3.95" y1="6" x2="3.95" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-3.95" y1="-1.6" x2="-3.3" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="3.95" y1="-1.6" x2="3.3" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-3.3" y1="-1.6" x2="-3.3" y2="0" width="0.2032" layer="21"/>
-<wire x1="3.3" y1="-1.6" x2="3.3" y2="0" width="0.2032" layer="21"/>
-<pad name="1" x="-2" y="0" drill="0.7" diameter="1.6"/>
-<pad name="2" x="0" y="0" drill="0.7" diameter="1.6"/>
-<pad name="3" x="2" y="0" drill="0.7" diameter="1.6"/>
-<text x="-1.27" y="5.24" size="0.4064" layer="25">&gt;Name</text>
-<text x="-1.27" y="3.97" size="0.4064" layer="27">&gt;Value</text>
-<text x="-2.4" y="0.67" size="1.27" layer="51">+</text>
-<text x="-0.4" y="0.67" size="1.27" layer="51">-</text>
-<text x="1.7" y="0.87" size="0.8" layer="51">S</text>
-</package>
 <package name="1X03_SMD_RA_MALE_POST">
 <description>&lt;h3&gt;SMD 3-Pin Male Right-Angle Header w/ Alignment posts&lt;/h3&gt;
 
@@ -559,65 +542,6 @@ Matches 4UCONN part # 11026&lt;br&gt;
 <smd name="3" x="2.54" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
 <hole x="-1.27" y="0" drill="1.6"/>
 <hole x="1.27" y="0" drill="1.6"/>
-</package>
-<package name="JST-3-PTH-VERT">
-<description>This 3-pin connector mates with the JST cable sold on SparkFun.</description>
-<wire x1="-3.95" y1="-2.25" x2="-3.95" y2="2.25" width="0.2032" layer="21"/>
-<wire x1="-3.95" y1="2.25" x2="3.95" y2="2.25" width="0.2032" layer="21"/>
-<wire x1="3.95" y1="2.25" x2="3.95" y2="-2.25" width="0.2032" layer="21"/>
-<wire x1="3.95" y1="-2.25" x2="1" y2="-2.25" width="0.2032" layer="21"/>
-<wire x1="-1" y1="-2.25" x2="-3.95" y2="-2.25" width="0.2032" layer="21"/>
-<wire x1="-1" y1="-1.75" x2="1" y2="-1.75" width="0.2032" layer="21"/>
-<wire x1="1" y1="-1.75" x2="1" y2="-2.25" width="0.2032" layer="21"/>
-<wire x1="-1" y1="-1.75" x2="-1" y2="-2.25" width="0.2032" layer="21"/>
-<pad name="1" x="-2" y="-0.55" drill="0.7" diameter="1.6"/>
-<pad name="2" x="0" y="-0.55" drill="0.7" diameter="1.6"/>
-<pad name="3" x="2" y="-0.55" drill="0.7" diameter="1.6"/>
-<text x="-3" y="3" size="0.4064" layer="25">&gt;Name</text>
-<text x="1" y="3" size="0.4064" layer="27">&gt;Value</text>
-<text x="-2.4" y="0.75" size="1.27" layer="51">+</text>
-<text x="-0.4" y="0.75" size="1.27" layer="51">-</text>
-<text x="1.7" y="0.95" size="0.8" layer="51">S</text>
-</package>
-<package name="1X03_SMD_RA_MALE_POST_SMALLER">
-<wire x1="3.81" y1="1.25" x2="-3.81" y2="1.25" width="0.1778" layer="51"/>
-<wire x1="-3.81" y1="1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="3.81" y1="-1.25" x2="2.53" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="2.53" y1="-1.25" x2="-0.01" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="-0.01" y1="-1.25" x2="-2.55" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="-2.55" y1="-1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="3.81" y1="-1.25" x2="3.81" y2="1.25" width="0.1778" layer="51"/>
-<wire x1="2.53" y1="-1.25" x2="2.53" y2="-7.25" width="0.127" layer="51"/>
-<wire x1="-0.01" y1="-1.25" x2="-0.01" y2="-7.25" width="0.127" layer="51"/>
-<wire x1="-2.55" y1="-1.25" x2="-2.55" y2="-7.25" width="0.127" layer="51"/>
-<rectangle x1="-0.32" y1="4.15" x2="0.32" y2="5.95" layer="51"/>
-<rectangle x1="-2.86" y1="4.15" x2="-2.22" y2="5.95" layer="51"/>
-<rectangle x1="2.22" y1="4.15" x2="2.86" y2="5.95" layer="51"/>
-<smd name="1" x="-2.54" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
-<smd name="2" x="0" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
-<smd name="3" x="2.54" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
-<hole x="-1.27" y="0" drill="1.3589"/>
-<hole x="1.27" y="0" drill="1.3589"/>
-</package>
-<package name="1X03_SMD_RA_MALE_POST_SMALLEST">
-<wire x1="3.81" y1="1.25" x2="-3.81" y2="1.25" width="0.1778" layer="51"/>
-<wire x1="-3.81" y1="1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="3.81" y1="-1.25" x2="2.53" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="2.53" y1="-1.25" x2="-0.01" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="-0.01" y1="-1.25" x2="-2.55" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="-2.55" y1="-1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="51"/>
-<wire x1="3.81" y1="-1.25" x2="3.81" y2="1.25" width="0.1778" layer="51"/>
-<wire x1="2.53" y1="-1.25" x2="2.53" y2="-7.25" width="0.127" layer="51"/>
-<wire x1="-0.01" y1="-1.25" x2="-0.01" y2="-7.25" width="0.127" layer="51"/>
-<wire x1="-2.55" y1="-1.25" x2="-2.55" y2="-7.25" width="0.127" layer="51"/>
-<rectangle x1="-0.32" y1="4.15" x2="0.32" y2="5.95" layer="51"/>
-<rectangle x1="-2.86" y1="4.15" x2="-2.22" y2="5.95" layer="51"/>
-<rectangle x1="2.22" y1="4.15" x2="2.86" y2="5.95" layer="51"/>
-<smd name="1" x="-2.54" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
-<smd name="2" x="0" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
-<smd name="3" x="2.54" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
-<hole x="-1.27" y="0" drill="1.3462"/>
-<hole x="1.27" y="0" drill="1.3462"/>
 </package>
 <package name="1X04">
 <wire x1="6.985" y1="1.27" x2="8.255" y2="1.27" width="0.2032" layer="21"/>
@@ -1022,6 +946,42 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="0" y1="-1.5" x2="-1.5" y2="-1.5" width="0.3048" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="2.2" width="0.3048" layer="21"/>
 </package>
+<package name="JST-3-PTH">
+<wire x1="-3.95" y1="-1.6" x2="-3.95" y2="6" width="0.2032" layer="21"/>
+<wire x1="-3.95" y1="6" x2="3.95" y2="6" width="0.2032" layer="21"/>
+<wire x1="3.95" y1="6" x2="3.95" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-3.95" y1="-1.6" x2="-3.3" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="3.95" y1="-1.6" x2="3.3" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-1.6" x2="-3.3" y2="0" width="0.2032" layer="21"/>
+<wire x1="3.3" y1="-1.6" x2="3.3" y2="0" width="0.2032" layer="21"/>
+<pad name="1" x="-2" y="0" drill="0.7" diameter="1.6256"/>
+<pad name="2" x="0" y="0" drill="0.7" diameter="1.6256"/>
+<pad name="3" x="2" y="0" drill="0.7" diameter="1.6256"/>
+<text x="-1.27" y="5.24" size="0.4064" layer="25">&gt;Name</text>
+<text x="-1.27" y="3.97" size="0.4064" layer="27">&gt;Value</text>
+<text x="-2.4" y="0.67" size="1.27" layer="51">+</text>
+<text x="-0.4" y="0.67" size="1.27" layer="51">-</text>
+<text x="1.7" y="0.87" size="0.8" layer="51">S</text>
+</package>
+<package name="JST-3-PTH-VERT">
+<description>This 3-pin connector mates with the JST cable sold on SparkFun.</description>
+<wire x1="-3.95" y1="-2.25" x2="-3.95" y2="2.25" width="0.2032" layer="21"/>
+<wire x1="-3.95" y1="2.25" x2="3.95" y2="2.25" width="0.2032" layer="21"/>
+<wire x1="3.95" y1="2.25" x2="3.95" y2="-2.25" width="0.2032" layer="21"/>
+<wire x1="3.95" y1="-2.25" x2="1" y2="-2.25" width="0.2032" layer="21"/>
+<wire x1="-1" y1="-2.25" x2="-3.95" y2="-2.25" width="0.2032" layer="21"/>
+<wire x1="-1" y1="-1.75" x2="1" y2="-1.75" width="0.2032" layer="21"/>
+<wire x1="1" y1="-1.75" x2="1" y2="-2.25" width="0.2032" layer="21"/>
+<wire x1="-1" y1="-1.75" x2="-1" y2="-2.25" width="0.2032" layer="21"/>
+<pad name="1" x="-2" y="-0.55" drill="0.7" diameter="1.6256"/>
+<pad name="2" x="0" y="-0.55" drill="0.7" diameter="1.6256"/>
+<pad name="3" x="2" y="-0.55" drill="0.7" diameter="1.6256"/>
+<text x="-3" y="3" size="0.4064" layer="25">&gt;Name</text>
+<text x="1" y="3" size="0.4064" layer="27">&gt;Value</text>
+<text x="-2.4" y="0.75" size="1.27" layer="51">+</text>
+<text x="-0.4" y="0.75" size="1.27" layer="51">-</text>
+<text x="1.7" y="0.95" size="0.8" layer="51">S</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RJ45-8">
@@ -1222,9 +1182,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="STOREFRONT_ID" value="PRT-08433" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="LOCK_NO_SILK" package="1X03_LOCK_NO_SILK">
@@ -1293,26 +1251,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </technologies>
 </device>
 <device name="JST-PTH-VERT" package="JST-3-PTH-VERT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="1X03_SMD_RA_MALE_POST_SMALLER" package="1X03_SMD_RA_MALE_POST_SMALLER">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="1X03_SMD_RA_MALE_POST_SMALLEST" package="1X03_SMD_RA_MALE_POST_SMALLEST">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -6905,6 +6843,24 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <label x="43.18" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="INT_G" class="0">
+<segment>
+<pinref part="P1" gate="G$1" pin="PB5"/>
+<wire x1="40.64" y1="66.04" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="INT1_XM" class="0">
+<segment>
+<pinref part="P1" gate="G$1" pin="PB1"/>
+<wire x1="40.64" y1="76.2" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="INT2_XM" class="0">
+<segment>
+<pinref part="P1" gate="G$1" pin="PB0"/>
+<wire x1="40.64" y1="78.74" x2="48.26" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -7561,15 +7517,76 @@ Accel/Mag Address = 0x1D</text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="204,2,40.64,12.7,U$1,RST,,,,"/>
+<approved hash="104,3,27.94,25.4,U2,VDD,+3V3,,,"/>
+<approved hash="104,2,10.16,10.16,P1,3.3V,+3V3,,,"/>
+<approved hash="104,2,10.16,7.62,P1,VBUS,+5V,,,"/>
+<approved hash="204,2,40.64,12.7,P1,RST,,,,"/>
+<approved hash="104,2,40.64,7.62,P1,GND2,GND,,,"/>
+<approved hash="104,1,58.42,7.62,U1,VCC,+5V,,,"/>
 <approved hash="202,1,58.42,-7.62,U1,1A2,,,,"/>
 <approved hash="202,1,58.42,-10.16,U1,1A3,,,,"/>
 <approved hash="202,1,58.42,-12.7,U1,1A4,,,,"/>
 <approved hash="202,1,58.42,-17.78,U1,2A1,,,,"/>
 <approved hash="202,1,58.42,-20.32,U1,2A2,,,,"/>
 <approved hash="202,1,58.42,-22.86,U1,2A3,,,,"/>
+<approved hash="202,5,43.18,7.62,IC3,EN_B,,,,"/>
+<approved hash="202,5,12.7,7.62,IC3,IN1_B,,,,"/>
+<approved hash="202,5,12.7,5.08,IC3,IN2_B,,,,"/>
+<approved hash="106,3,68.58,5.08,CTS,,,,,"/>
+<approved hash="106,4,137.16,93.98,DEN_G,,,,,"/>
+<approved hash="106,3,68.58,25.4,DIO0,,,,,"/>
+<approved hash="106,3,68.58,22.86,DIO1,,,,,"/>
+<approved hash="106,3,68.58,20.32,DIO2,,,,,"/>
+<approved hash="106,3,68.58,17.78,DIO3,,,,,"/>
+<approved hash="106,3,68.58,2.54,DIO4,,,,,"/>
+<approved hash="106,3,68.58,12.7,DIO5,,,,,"/>
+<approved hash="106,3,68.58,7.62,DIO9,,,,,"/>
+<approved hash="106,3,27.94,10.16,DIO11,,,,,"/>
+<approved hash="106,3,27.94,17.78,DIO12,,,,,"/>
+<approved hash="106,4,137.16,99.06,DRDY_G,,,,,"/>
+<approved hash="106,3,27.94,5.08,DTR,,,,,"/>
+<approved hash="106,4,137.16,104.14,INT1_XM,,,,,"/>
+<approved hash="106,4,137.16,106.68,INT2_XM,,,,,"/>
+<approved hash="106,4,137.16,96.52,INT_G,,,,,"/>
+<approved hash="106,3,27.94,7.62,RES1,,,,,"/>
+<approved hash="106,3,68.58,10.16,RES2,,,,,"/>
+<approved hash="106,3,27.94,12.7,RSSI,,,,,"/>
 <approved hash="209,3,68.58,15.24,RTS,,,,,"/>
+<approved hash="106,3,68.58,15.24,RTS,,,,,"/>
 <approved hash="209,3,27.94,15.24,XRESET,,,,,"/>
+<approved hash="106,3,27.94,15.24,XRESET,,,,,"/>
+<approved hash="108,1,58.42,-5.08,DDATA_1,,,,,"/>
+<approved hash="108,2,43.18,7.62,GND,,,,,"/>
+<approved hash="108,4,58.42,40.64,+3V3,,,,,"/>
+<approved hash="108,4,111.76,40.64,+3V3,,,,,"/>
+<approved hash="108,4,25.4,40.64,+3V3,,,,,"/>
+<approved hash="113,1,191.965,46.3973,JP7,,,,,"/>
+<approved hash="113,1,95.4447,46.3973,JP9,,,,,"/>
+<approved hash="113,1,113.225,46.3973,JP10,,,,,"/>
+<approved hash="113,1,131.005,46.3973,JP11,,,,,"/>
+<approved hash="113,1,148.785,46.3973,JP12,,,,,"/>
+<approved hash="113,1,226.255,-22.1827,JP1,,,,,"/>
+<approved hash="113,2,73.8547,66.7173,JP2,,,,,"/>
+<approved hash="113,2,94.1747,66.7173,JP3,,,,,"/>
+<approved hash="113,4,56.0747,120.057,JP4,,,,,"/>
+<approved hash="115,4,58.42,113.03,SCL,,,,,"/>
+<approved hash="115,4,55.88,113.03,SDA,,,,,"/>
+<approved hash="115,2,93.98,60.96,+5V,,,,,"/>
+<approved hash="115,2,73.66,60.96,+5V,,,,,"/>
+<approved hash="115,2,130.81,15.24,+5V,,,,,"/>
+<approved hash="115,1,226.06,-29.21,+5V,,,,,"/>
+<approved hash="115,1,220.98,-29.21,TX_3,,,,,"/>
+<approved hash="115,2,88.9,60.96,TX_5,,,,,"/>
+<approved hash="115,2,68.58,60.96,TX_7,,,,,"/>
+<approved hash="115,1,149.86,40.64,DDATA_1,,,,,"/>
+<approved hash="115,1,132.08,40.64,DDATA_1,,,,,"/>
+<approved hash="115,1,114.3,40.64,DDATA_1,,,,,"/>
+<approved hash="115,1,96.52,40.64,DDATA_1,,,,,"/>
+<approved hash="115,1,223.52,-29.21,RX_3,,,,,"/>
+<approved hash="115,2,91.44,60.96,RX_5,,,,,"/>
+<approved hash="115,4,53.34,113.03,+3V3,,,,,"/>
+<approved hash="115,2,71.12,60.96,RX_7,,,,,"/>
+<approved hash="115,4,50.8,113.03,GND,,,,,"/>
 </errors>
 </schematic>
 </drawing>
