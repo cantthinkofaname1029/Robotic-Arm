@@ -5,36 +5,38 @@
 #include "driverlib/pin_map.h"
 #include "driverlib/sysctl.h"
 #include "driverlib/uart.h"
+#include "utils/uartstdio.h"
+#include "struct_xfer.c"
+#include "uart.h"
 #define DELAY 5
 #define BYTE
 
-struct RECEIVE_DATA_STRUCTURE{
-	  unsigned int reset;
-	  unsigned int wristUp;
-	  unsigned int wristDown;
-	  unsigned int wristClockWise;
-	  unsigned int wristCounterClockWise;
-	  unsigned int elbowUp;
-	  unsigned int elbowDown;
-	  unsigned int elbowClockWise;
-	  unsigned int elbowCounterClockWise;
-	  unsigned int actuatorForward;
-	  unsigned int actuatorReverse;
-	  unsigned int baseClockWise;
-	  unsigned int baseCounterClockWise;
-	};
+
+	const int FORWARD_CHARACTER = 0;
+	const int REVERSE_CHARACTER = 1;
 
 void reset(void);
 
 int main(void){
 	//necessary variable definitions
-	const int FORWARD_CHARACTER = 0;
-	const int REVERSE_CHARACTER = 1;
+
 	unsigned int last = 0;
 	unsigned int count = 0;
 	volatile int state = 0; //unsure if this will work
 	struct RECEIVE_DATA_STRUCTURE receiveData;
 	short int DEBUG_MODE = false;
+
+	initPins();
+
+	uint32_t uart1;
+	uint32_t uart2;
+	uint32_t uart3;
+
+	uart1 = init_uart(1,115200);
+	uart2 = init_uart(2,115200);
+	uart3 = init_uart(3,115200);
+	//initialization of Pins
+
 
 	//const int DUBUG_MODE_SELECT = A3; //unsure if A3 is an int.
 	//setup
@@ -43,7 +45,7 @@ int main(void){
 	//while loop for running the main program
 	while(1)
 	{
-		if(UARTgets()){
+		if(recv_struct(uart3,&receiveData)){
 		    if(receiveData.reset)
 		      reset();
 		    if(receiveData.wristUp)
@@ -73,79 +75,97 @@ int main(void){
 		    resetStruct();
 		}
 	}
-
 }
 
+
 void wristClockWise(){
-  UARTprintf(FORWARD_CHARACTER); //psudeo funciton.
+  GPIOPinWrite(GPIO_PORTD_BASE,1,FORWARD_CHARACTER); //psudeo funciton.
   delay(DELAY);
   last=1;
 }
 
 void wristCOunterClockWise(){
-	UARTprintf(REVERSE_CHARACTER);
+	GPIOPinWrite(GPIO_PORTA_BASE,2,FORWARD_CHARACTER);
 	delay(DELAY);
 	last=2;
 }
 
 void wristUp(){
-	UARTprintf(FORWARD_CHARACTER);
+	GPIOPinWrite(GPIO_PORTD_BASE,2,FORWARD_CHARACTER);
 	delay(DELAY);
 	last=3;
 }
 
 void wristDown(){
-	UARTprintf(REVERSE_CHARACTER);
+	GPIOPinWrite(GPIO_PORTD_BASE,2,FORWARD_CHARACTER);
 	delay(DELAY);
 	last=4;
 }
 
 void elbowCounterClockWise(){
-	UARTprintf(FORWARD_CHARACTER);
+	GPIOPinWrite(GPIO_PORTE_BASE,0,FORWARD_CHARACTER);
 	delay(DELAY);
 	last=5;
 }
 
 void elbowClockWise(){
-	UARTprintf(REVERSE_CHARACTER);
+	GPIOPinWrite(GPIO_PORTF_BASE,0,FORWARD_CHARACTER);
 	delay(DELAY);
 	last=6;
 }
 
 void elbowDown(){
-	UARTprintf(FORWARD_CHARACTER);
+	GPIOPinWrite(GPIO_PORTF_BASE,2,FORWARD_CHARACTER);
 	delay(DELAY);
 	last=7;
 }
 
 void elbowUp(){
-	UARTprintf(REVERSE_CHARACTER);
+	GPIOPinWrite(GPIO_PORTF_BASE,3,FORWARD_CHARACTER);
 	delay(DELAY);
 	last=8;
 }
 
 void actuatorForward(){
-	UARTprintf(FORWARD_CHARACTER);
+	GPIOPinWrite(GPIO_PORTA_BASE,3,FORWARD_CHARACTER);
 	delay(DELAY);
 	last=9;
 }
 
 void actuatorReverse(){
-	UARTprintf(REVERSE_CHARACTER);
+	GPIOPinWrite(GPIO_PORTA_BASE,4,FORWARD_CHARACTER);
 	delay(DELAY);
 	last=10;
 }
 
 void baseClockWise(){
-	UARTprintf(FORWARD_CHARACTER);
+	UARTwrite(FORWARD_CHARACTER);
 	delay(DELAY);
 	last=11;
 }
 
 void baseCounterClockWise(){
-	UARTprintf(REVERSE_CHARACTER);
+	UARTwrite(FORWARD_CHARACTER);
 	delay(DELAY);
 	last=12;
+}
+void initPins(){
+		GPIOPinTypeGPIOOutout(GPIO_PORTE_BASE, 1)
+		GPIOPinTypeGPIOOutout(GPIO_PORTD_BASE, 1)
+		GPIOPinTypeGPIOOutout(GPIO_PORTA_BASE, 2)
+		GPIOPinTypeGPIOOutout(GPIO_PORTE_BASE, 2)
+		GPIOPinTypeGPIOOutout(GPIO_PORTD_BASE, 3)
+		GPIOPinTypeGPIOOutout(GPIO_PORTD_BASE, 3)
+		GPIOPinTypeGPIOOutout(GPIO_PORTB_BASE, 7)
+		GPIOPinTypeGPIOOutout(GPIO_PORTE_BASE, 0)
+		GPIOPinTypeGPIOOutout(GPIO_PORTF_BASE, 0)
+		GPIOPinTypeGPIOOutout(GPIO_PORTB_BASE, 2)
+		GPIOPinTypeGPIOOutout(GPIO_PORTF_BASE, 2)
+		GPIOPinTypeGPIOOutout(GPIO_PORTF_BASE, 3)
+		GPIOPinTypeGPIOOutout(GPIO_PORTB_BASE, 6)
+		GPIOPinTypeGPIOOutout(GPIO_PORTA_BASE, 3)
+		GPIOPinTypeGPIOOutout(GPIO_PORTA_BASE, 4)
+
 }
 //resets all components to the struct.
 void resetStruct(){
