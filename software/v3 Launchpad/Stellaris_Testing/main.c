@@ -26,18 +26,12 @@ int main(void){
 	struct RECEIVE_DATA_STRUCTURE receiveData;
 	short int DEBUG_MODE = false;
 
-
-	resetStruct(receiveData);
 	initPins();
 
-	UARTStdioInit(0); // use uart0 at 115200
-
-	uint32_t uart0;
 	uint32_t uart1;
 	uint32_t uart2;
 	uint32_t uart3;
 
-	uart0 = init_uart(0,115200);
 	uart1 = init_uart(1,115200);
 	uart2 = init_uart(2,115200);
 	uart3 = init_uart(3,115200);
@@ -47,7 +41,7 @@ int main(void){
 	//const int DUBUG_MODE_SELECT = A3; //unsure if A3 is an int.
 	//setup
 	UARTStdioInit(0);
-
+	resetStruct();
 	//while loop for running the main program
 	while(1)
 	{
@@ -78,7 +72,7 @@ int main(void){
 		      baseClockWise();
 		    if(receiveData.baseCounterClockWise)
 		      baseCounterClockWise();
-		    resetStruct(receiveData);
+		    resetStruct();
 		}
 	}
 }
@@ -87,95 +81,94 @@ int main(void){
 void wristClockWise(){
   GPIOPinWrite(GPIO_PORTD_BASE,1,FORWARD_CHARACTER); //psudeo funciton.
   delay(DELAY);
-  //last=1;
+  last=1;
 }
 
 void wristCOunterClockWise(){
 	GPIOPinWrite(GPIO_PORTA_BASE,2,FORWARD_CHARACTER);
 	delay(DELAY);
-	//last=2;
+	last=2;
 }
 
 void wristUp(){
 	GPIOPinWrite(GPIO_PORTD_BASE,2,FORWARD_CHARACTER);
 	delay(DELAY);
-	//last=3;
+	last=3;
 }
 
 void wristDown(){
 	GPIOPinWrite(GPIO_PORTD_BASE,2,FORWARD_CHARACTER);
 	delay(DELAY);
-	//last=4;
+	last=4;
 }
 
 void elbowCounterClockWise(){
 	GPIOPinWrite(GPIO_PORTE_BASE,0,FORWARD_CHARACTER);
 	delay(DELAY);
-	//last=5;
+	last=5;
 }
 
 void elbowClockWise(){
 	GPIOPinWrite(GPIO_PORTF_BASE,0,FORWARD_CHARACTER);
 	delay(DELAY);
-	//last=6;
+	last=6;
 }
 
 void elbowDown(){
 	GPIOPinWrite(GPIO_PORTF_BASE,2,FORWARD_CHARACTER);
 	delay(DELAY);
-	//last=7;
+	last=7;
 }
 
 void elbowUp(){
 	GPIOPinWrite(GPIO_PORTF_BASE,3,FORWARD_CHARACTER);
 	delay(DELAY);
-	//last=8;
+	last=8;
 }
 
 void actuatorForward(){
 	GPIOPinWrite(GPIO_PORTA_BASE,3,FORWARD_CHARACTER);
 	delay(DELAY);
-	//last=9;
+	last=9;
 }
 
 void actuatorReverse(){
 	GPIOPinWrite(GPIO_PORTA_BASE,4,FORWARD_CHARACTER);
 	delay(DELAY);
-	//last=10;
+	last=10;
 }
 
 void baseClockWise(){
-	UARTCharPut(UART1_BASE,FORWARD_CHARACTER);
+	UARTwrite(FORWARD_CHARACTER);
 	delay(DELAY);
-	//last=11;
+	last=11;
 }
 
 void baseCounterClockWise(){
-	UARTCharPut(UART1_BASE,REVERSE_CHARACTER);
+	UARTwrite(FORWARD_CHARACTER);
 	delay(DELAY);
-	//last=12;
+	last=12;
 }
 void initPins(){
-		GPIOPinTypeGPIOOutout(GPIO_PORTE_BASE, 1);
-		GPIOPinTypeGPIOOutout(GPIO_PORTD_BASE, 1);
-		GPIOPinTypeGPIOOutout(GPIO_PORTA_BASE, 2);
-		GPIOPinTypeGPIOOutout(GPIO_PORTE_BASE, 2);
-		GPIOPinTypeGPIOOutout(GPIO_PORTD_BASE, 3);
-		GPIOPinTypeGPIOOutout(GPIO_PORTD_BASE, 3);
-		GPIOPinTypeGPIOOutout(GPIO_PORTB_BASE, 7);
-		GPIOPinTypeGPIOOutout(GPIO_PORTE_BASE, 0);
-		GPIOPinTypeGPIOOutout(GPIO_PORTF_BASE, 0);
-		GPIOPinTypeGPIOOutout(GPIO_PORTB_BASE, 2);
-		GPIOPinTypeGPIOOutout(GPIO_PORTF_BASE, 2);
-		GPIOPinTypeGPIOOutout(GPIO_PORTF_BASE, 3);
-		GPIOPinTypeGPIOOutout(GPIO_PORTB_BASE, 6);
-		GPIOPinTypeGPIOOutout(GPIO_PORTA_BASE, 3);
-		GPIOPinTypeGPIOOutout(GPIO_PORTA_BASE, 4);
-		UARTEnable(UART1_BASE);
-}
+		GPIOPinTypeGPIOOutout(GPIO_PORTE_BASE, 1)
+		GPIOPinTypeGPIOOutout(GPIO_PORTD_BASE, 1)
+		GPIOPinTypeGPIOOutout(GPIO_PORTA_BASE, 2)
+		GPIOPinTypeGPIOOutout(GPIO_PORTE_BASE, 2)
+		GPIOPinTypeGPIOOutout(GPIO_PORTD_BASE, 3)
+		GPIOPinTypeGPIOOutout(GPIO_PORTD_BASE, 3)
+		GPIOPinTypeGPIOOutout(GPIO_PORTB_BASE, 7)
+		GPIOPinTypeGPIOOutout(GPIO_PORTE_BASE, 0)
+		GPIOPinTypeGPIOOutout(GPIO_PORTF_BASE, 0)
+		GPIOPinTypeGPIOOutout(GPIO_PORTB_BASE, 2)
+		GPIOPinTypeGPIOOutout(GPIO_PORTF_BASE, 2)
+		GPIOPinTypeGPIOOutout(GPIO_PORTF_BASE, 3)
+		GPIOPinTypeGPIOOutout(GPIO_PORTB_BASE, 6)
+		GPIOPinTypeGPIOOutout(GPIO_PORTA_BASE, 3)
+		GPIOPinTypeGPIOOutout(GPIO_PORTA_BASE, 4)
 
+}
 //resets all components to the struct.
-void resetStruct(struct RECEIVE_DATA_STRUCTURE receiveData){
+void resetStruct(){
   receiveData.reset = 0;
   receiveData.wristUp = 0;
   receiveData.wristDown = 0;
