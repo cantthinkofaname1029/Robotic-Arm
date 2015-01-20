@@ -29,6 +29,6 @@ https://www.pololu.com/product/2337/specs
 Software:
 ---------
 
-I've only included open loop control software at this point. The UART lines of each motor controller are currently connected in a single "bus" based topology. Each motor controller moves based on different byte values, thus allowing them to operate on the same bus without addressing or bus contention. A more roboust protocol will eventually be implemented.
-
-Replace the SoftwareSerial libraries in the arduino/libraries folder for the IDE with the included to ensure the Dynamexial servo works.
+-Software for V3 is nearing completion. It will have basic functionality for the arm for open-loop controls.
+-Software for V4 has not started yet. It will be a port from the V3 code to TivaWare.
+-After the V4 code has been completed for basic functionality, we need to start writing the framework for more exotic control methods.
