@@ -14,15 +14,20 @@ Hardware:
 ###Motors
 -The base of the arm as well as the elbow joints use the Dynamixel MX-64T. It operates at a MAXIMUM voltage of 14.8V. Information on these motors can be found here:
 http://support.robotis.com/en/product/dynamixel/mx_series/mx-64.htm
+
 http://support.robotis.com/en/techsupport_eng.htm#product/dynamixel/mx_series/mx-64.htm
+
 http://support.robotis.com/en/techsupport_eng.htm#software/dynamixelsdk.htm
 
 -The wrist joints on the arm use the Dynamixel MX-28T. It operates at a MAXIMUM voltage of 14.8V. Information on these motors can be found here:
 http://support.robotis.com/en/product/dynamixel/mx_series/mx-28.htm
+
 http://support.robotis.com/en/techsupport_eng.htm#product/dynamixel/mx_series/mx-28.htm
+
 http://support.robotis.com/en/techsupport_eng.htm#software/dynamixelsdk.htm
 
 -The shoulder joint of the arm uses a Pololu Linear Actuator with an 8" stroke and a potentiometer for feedback. It operates at a MAXIMUM of 12V. It will be controlled using an on-board motor controller. Information on this actuator can be found here:
+
 https://www.pololu.com/product/2337/specs
 
 
@@ -30,5 +35,7 @@ Software:
 ---------
 
 -Software for V3 is nearing completion. It will have basic functionality for the arm for open-loop controls.
+
 -Software for V4 has not started yet. It will be a port from the V3 code to TivaWare.
+
 -After the V4 code has been completed for basic functionality, we need to start writing the framework for more exotic control methods.
