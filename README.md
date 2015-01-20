@@ -41,3 +41,22 @@ Software:
 -Software for V4 has not started yet. It will be a port from the V3 code to TivaWare.
 
 -After the V4 code has been completed for basic functionality, we need to start writing the framework for more exotic control methods.
+
+-There is a Dynamixel SDK found here:
+
+http://support.robotis.com/en/software/dynamixelsdk.htm
+
+-There is a fully-written Dynamixel Library written for Arduino here:
+
+http://savageelectronics.blogspot.com/2011/01/arduino-y-dynamixel-ax-12.html
+
+if you can't read spanish or use google translate, the various libraries are found here:
+
+http://savageelectronics.blogspot.com/2011/08/actualizacion-biblioteca-dynamixel.html
+
+These will probably be useful to us when writing the further code.
+
+-We may have to write our own PID control for the actuator in the future. Get an introduction to PID for arduino here:
+
+http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/
+
