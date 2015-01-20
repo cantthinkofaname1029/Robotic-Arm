@@ -1,13 +1,15 @@
 Robotic Arm
 ===========
 
-2014 Robotic Arm Hardware/Software
+2015 Robotic Arm Hardware/Software
 
 Hardware:
 ---------
 
 ###PCBs
-The file "PCB0M8A3.*" is the most recent revision of the motor controller boards which have been manufactured.
+-Version 3 of the arm board aka "the old-new arm board" is a remake of V2 (the old arm board currently on Phoenix). It is designed to have the exact same functionality as Phoenix, without using a master-slave protocol. It features a TI Launchpad Stellaris as the central CPU, 3 motor controllers that can connect to up to two motors each, and an RS-485 connection to the old dynamixel (MX-64R). It has the additional capability of communicating with the end effector via XBee and receives power from PORN.
+
+-Version 4 of the arm board aka "the illuminati board" is the latest version. It features a TIVA-C for it's central processor and extends the functionality of Version 3. It only has one motor controller for the Pololu actuator, but it connects to multiple Dynamixels over TTL. There is a 9DOF IMU added on the board for additional control capabilities. it also receives power from PORN.
 
 ###Motors
 -The base of the arm as well as the elbow joints use the Dynamixel MX-64T. It operates at a MAXIMUM voltage of 14.8V. Information on these motors can be found here:
