@@ -13,6 +13,7 @@ Hardware:
 
 ###Motors
 -The base of the arm as well as the elbow joints use the Dynamixel MX-64T. It operates at a MAXIMUM voltage of 14.8V. Information on these motors can be found here:
+
 http://support.robotis.com/en/product/dynamixel/mx_series/mx-64.htm
 
 http://support.robotis.com/en/techsupport_eng.htm#product/dynamixel/mx_series/mx-64.htm
@@ -20,6 +21,7 @@ http://support.robotis.com/en/techsupport_eng.htm#product/dynamixel/mx_series/mx
 http://support.robotis.com/en/techsupport_eng.htm#software/dynamixelsdk.htm
 
 -The wrist joints on the arm use the Dynamixel MX-28T. It operates at a MAXIMUM voltage of 14.8V. Information on these motors can be found here:
+
 http://support.robotis.com/en/product/dynamixel/mx_series/mx-28.htm
 
 http://support.robotis.com/en/techsupport_eng.htm#product/dynamixel/mx_series/mx-28.htm
