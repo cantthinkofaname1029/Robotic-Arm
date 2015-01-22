@@ -2,6 +2,7 @@ Robotic Arm
 ===========
 
 2015 Robotic Arm Hardware/Software
+- Please see the wiki for more information about the subjects below. -
 
 Hardware:
 ---------
